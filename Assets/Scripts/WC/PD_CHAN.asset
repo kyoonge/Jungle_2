@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed4697302dc5ff47b5f74c08ff326ae, type: 3}
-  m_Name: playerData
+  m_Name: PD_CHAN
   m_EditorClassIdentifier: 
   movementVelocity: 8
   jumpVelocity: 17
@@ -31,4 +31,4 @@ MonoBehaviour:
   drag: 10
   dashEndYMultiplier: 0.2
   distBetweenAfterImages: 0.5
-  thrustVelocity: 15
+  thrustVelocity: 12

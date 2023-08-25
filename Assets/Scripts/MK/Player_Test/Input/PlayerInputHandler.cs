@@ -10,17 +10,23 @@ public class PlayerInputHandler : MonoBehaviour
     public Vector2 RawMovementInput { get; private set; }
     public Vector2 RawDashDirectionInput { get; private set; }
     public Vector2Int DashDirectionInput { get; private set; }
+    public float RawThrustDirectionInput { get; private set; }
+    public int ThrustDirectionInput { get; private set; }
+    
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
     public bool JumpInput { get; private set; }
     public bool JumpInputStop { get; private set; }
     public bool DashInput { get; private set; }
     public bool DashInputStop { get; private set; }
+    public bool ThrustInput { get; private set; }
+    public bool ThrustInputStop { get; private set; }
 
     [SerializeField]
-    private float inputHoldTime = 0.2f; // ´ë½¬ ¶Ç´Â Á¡ÇÁ ´©¸£°í ÀÖ´Â ½Ã°£
+    private float inputHoldTime = 0.2f; // ëŒ€ì‰¬ ë˜ëŠ” ì í”„ ëˆ„ë¥´ê³  ìˆëŠ” ì‹œê°„
     private float jumpInputStartTime;
     private float dashInputStartTime;
+    private float thrustInputStartTime;
 
     private void Start()
     {
@@ -38,8 +44,6 @@ public class PlayerInputHandler : MonoBehaviour
 
         NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
         NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
-        
-
     }
 
     public void OnDashInput(InputAction.CallbackContext context)
@@ -55,9 +59,27 @@ public class PlayerInputHandler : MonoBehaviour
             DashInputStop = true;
         }
 
-        //´ë½Ã ¹æÇâÀ» ¹æÇâÅ° ÀÎÇ²À¸·Î ¼³Á¤
+        //ëŒ€ì‹œ ë°©í–¥ì„ ë°©í–¥í‚¤ ì¸í’‹ìœ¼ë¡œ ì„¤ì •
         RawDashDirectionInput = new Vector2(NormInputX, NormInputY);
         DashDirectionInput = Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
+    }
+
+    public void OnThrustInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            ThrustInput = true;
+            ThrustInputStop = false;
+            thrustInputStartTime = Time.time;
+        }
+        else if (context.canceled)
+        {
+            ThrustInput = false;
+            ThrustInputStop = true;
+        }
+        
+        RawThrustDirectionInput = NormInputX;
+        ThrustDirectionInput = Mathf.RoundToInt(RawThrustDirectionInput);
     }
 
     //public Vector2 OnDashDirectionInput()
