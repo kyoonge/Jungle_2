@@ -9,6 +9,7 @@ public class PlayerInAirState : PlayerState
     private bool jumpInput;
     private bool jumpInputStop;
     private bool dashInput;
+    private bool thrustInput;
 
     //Checks
     private bool isGrounded;
@@ -55,6 +56,7 @@ public class PlayerInAirState : PlayerState
         jumpInput = player.InputHandler.JumpInput;
         jumpInputStop = player.InputHandler.JumpInputStop;
         dashInput = player.InputHandler.DashInput;
+        thrustInput = player.InputHandler.ThrustInput;
 
         isGrounded = player.CheckIfGrounded();
 
@@ -73,6 +75,11 @@ public class PlayerInAirState : PlayerState
         else if (dashInput&&player.DashState.CheckIfCanDash())
         {
             stateMachine.ChangeState(player.DashState);
+        }
+        
+        else if (thrustInput)
+        {
+            stateMachine.ChangeState(player.ThrustState);
         }
         else
         {

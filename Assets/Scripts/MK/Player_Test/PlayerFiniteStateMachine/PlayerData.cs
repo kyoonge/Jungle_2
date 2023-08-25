@@ -25,11 +25,14 @@ public class PlayerData : ScriptableObject
 
     [Header("Dash State")]
     public float dashCooldown = 0.5f;
-    public float maxHoldTime = 1f; //½½·Î¿ì¸ğ¼Ç ½Ã°£ (1f)
-    public float holdTimeScale = 0.25f; // ½½·Î¿ì¸ğ¼Ç¶§ÀÇ ½Ã°£ ½ºÄÉÀÏ
-    public float dashTime = 0.2f; // ´ë½Ã ±æÀÌ
+    public float maxHoldTime = 1f; //ìŠ¬ë¡œìš°ëª¨ì…˜ ì‹œê°„ (1f)
+    public float holdTimeScale = 0.25f; // ìŠ¬ë¡œìš°ëª¨ì…˜ë•Œì˜ ì‹œê°„ ìŠ¤ì¼€ì¼
+    public float dashTime = 0.2f; // ëŒ€ì‹œ ê¸¸ì´
     public float dashVelocity = 30f;
-    public float drag = 10f; //´ë½Ã ÀúÇ× (¸®Áöµå¹ÙµğÀÇ Linear Drag)
-    public float dashEndYMultiplier = 0.2f; // ´ë½Ã ³¡³¯ ¶§ ³ô°Ô ³¯¾Æ°¡Áö ¾Ê°Ô ? ÇÏ´Â °ª
-    public float distBetweenAfterImages = 0.5f; // ¾ÖÇÁÅÍÀÌ¹ÌÁö »çÀÌÀÇ °Å¸®
+    public float drag = 10f; //ëŒ€ì‹œ ì €í•­ (ë¦¬ì§€ë“œë°”ë””ì˜ Linear Drag)
+    public float dashEndYMultiplier = 0.2f; // ëŒ€ì‹œ ëë‚  ë•Œ ë†’ê²Œ ë‚ ì•„ê°€ì§€ ì•Šê²Œ ? í•˜ëŠ” ê°’
+    public float distBetweenAfterImages = 0.5f; // ì• í”„í„°ì´ë¯¸ì§€ ì‚¬ì´ì˜ ê±°ë¦¬
+
+    [Header("Thruster State")] 
+    public float thrustVelocity = 15f;
 }
