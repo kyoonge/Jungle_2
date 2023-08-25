@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed4697302dc5ff47b5f74c08ff326ae, type: 3}
   m_Name: playerData
   m_EditorClassIdentifier: 
-  movementVelocity: 10
+  movementVelocity: 8
   jumpVelocity: 17
   amoutOfJumps: 1
-  downGravityScale: 15
-  GravityScale: 5
+  downGravityScale: 18
+  GravityScale: 6
   groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 192
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 1
-  dashCooldown: 0.5
+  dashCooldown: 0
   maxHoldTime: 0
-  holdTimeScale: 0.25
+  holdTimeScale: 0.1
   dashTime: 0.2
-  dashVelocity: 30
+  dashVelocity: 40
   drag: 10
   dashEndYMultiplier: 0.2
   distBetweenAfterImages: 0.5
