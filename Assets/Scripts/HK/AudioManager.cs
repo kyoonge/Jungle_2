@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
         Unpaused,
         Stop,
     }
-    public State state = State.Stop;
+    public State state = State.Playing;
 
     void Awake()
     {
