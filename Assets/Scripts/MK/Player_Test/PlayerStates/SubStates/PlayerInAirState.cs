@@ -16,9 +16,15 @@ public class PlayerInAirState : PlayerState
 
     private bool coyoteTime;
 
+    //variables
+    private float downGravity;
+    private float originGravity;
+
 
     public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
+        downGravity = playerData.downGravityScale;
+        originGravity = playerData.GravityScale;
     }
 
     public override void DoChecks()
@@ -50,11 +56,14 @@ public class PlayerInAirState : PlayerState
         jumpInputStop = player.InputHandler.JumpInputStop;
         dashInput = player.InputHandler.DashInput;
 
+        isGrounded = player.CheckIfGrounded();
 
-        
-        if (/*isGrounded*/player.CheckIfGrounded() && player.CurrentVelocity.y < 0.01f)
+        if (isGrounded && player.CurrentVelocity.y < 0.01f)
         {
-            
+            Debug.Log("Go Down");
+
+            //downGravity back
+            player.RB.gravityScale = originGravity;
             stateMachine.ChangeState(player.LandState);
         }
         else if(jumpInput && player.JumpState.CanJump())
@@ -74,9 +83,12 @@ public class PlayerInAirState : PlayerState
             player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
         }
 
-        //Down Gravity
+        if (!isGrounded && player.CurrentVelocity.y < 0.01f)
+        {
 
-
+            //downGravity
+            player.RB.gravityScale = downGravity;
+        }
     }
 
     private void CheckJumpMultiplier()
