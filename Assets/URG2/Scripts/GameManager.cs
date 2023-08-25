@@ -179,8 +179,8 @@ public class GameManager : MonoBehaviour
         yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 1f));
 
         // 타이틀 인트로 재생
-        canvases[(int)Canvas.Title].GetComponent<Animation>().Play();
-        yield return new WaitForSeconds(5.6f);
+        //canvases[(int)Canvas.Title].GetComponent<Animation>().Play();
+        //yield return new WaitForSeconds(5.6f);
 
         // 선택화면 시작
         Select();
