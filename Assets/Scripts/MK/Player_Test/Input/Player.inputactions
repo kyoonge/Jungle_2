@@ -111,6 +111,17 @@
                 },
                 {
                     "name": "",
+                    "id": "873d7d55-ad9f-45c3-b098-9edf94bb3ac8",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "03b65608-429c-493b-8191-56a4460652da",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -167,7 +178,7 @@
                 {
                     "name": "",
                     "id": "855fc820-b961-40ea-a4f6-b7a2e470552c",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
