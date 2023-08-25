@@ -65,6 +65,8 @@ public class Parser
                         sheet.title = readLine.Split(':')[1].Trim();
                     else if (readLine.StartsWith("Artist"))
                         sheet.artist = readLine.Split(':')[1].Trim();
+                    else if (readLine.StartsWith("NumLines"))
+                        sheet.numLines = int.Parse(readLine.Split(':')[1].Trim());
                 }
                 else if (currentStep == Step.Audio)
                 {

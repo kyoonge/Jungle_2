@@ -28,28 +28,52 @@ public class SheetStorage : MonoBehaviour
         List<Note> notes = new List<Note>();
         string noteStr = string.Empty;
         float baseTime = sheet.BarPerSec / 16;
+        // 위치 기반 라인 설정 위한 변수
+        int numLines = sheet.numLines;
+        int median = numLines / 2;
         foreach (NoteObject note in NoteGenerator.Instance.toReleaseList)
         {
             if (!note.gameObject.activeSelf) // 비활성화되어있다면 삭제된 노트이므로 무시
                 continue;
-
-            float line = note.transform.position.x;
+            
+            float linePosX = note.transform.position.x;
             int findLine = 0;
-            if (line < -1f && line > -2f)
+            bool isEven = numLines % 2 == 0;
+            for (var i = 0; i < median; i++)
             {
-                findLine = 0;
-            }
-            else if (line < 0f && line > -1f)
-            {
-                findLine = 1;
-            }
-            else if (line < 1f && line > 0f)
-            {
-                findLine = 2;
-            }
-            else if (line < 2f && line > 1f)
-            {
-                findLine = 3;
+                if (isEven)
+                {
+                    if (linePosX > i && linePosX < i + 1)
+                    {
+                        // Positive
+                        findLine = median + i;
+                    }
+                    else if (linePosX < -i && linePosX > -(i + 1))
+                    {
+                        // Negative
+                        findLine = median - 1 - i;
+                    }
+                }
+                else
+                {
+                    // Odd Case
+                    if (linePosX > (i + 0.5f) && linePosX < (i + 1.5f))
+                    {
+                        // Positive
+                        findLine = median + 1 + i;
+                    }
+                    else if (linePosX < -(i + 0.5f) && linePosX > -(i + 1.5f))
+                    {
+                        // Negative
+                        findLine = median - 1 - i;
+                    }
+
+                    if (linePosX > -0.5f && linePosX < 0.5f)
+                    {
+                        // Zero
+                        findLine = median;
+                    }
+                }
             }
 
             if (note is NoteShort)
@@ -90,6 +114,7 @@ public class SheetStorage : MonoBehaviour
         string writer = $"[Description]\n" +
             $"Title: {sheet.title}\n" +
             $"Artist: {sheet.artist}\n\n" +
+            $"NumLines: {sheet.numLines}\n\n" +
             $"[Audio]\n" +
             $"BPM: {sheet.bpm}\n" +
             $"Offset: {sheet.offset}\n" +

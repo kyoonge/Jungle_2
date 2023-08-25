@@ -117,7 +117,7 @@ public class Editor : MonoBehaviour
     {
         while (true)
         {
-            objects.transform.position += Vector3.down * Time.deltaTime * speed;
+            objects.transform.position += Vector3.down * (Time.deltaTime * speed);
             yield return null;
         }
     }

@@ -63,4 +63,13 @@ public class GridObject : MonoBehaviour
             }
         }
     }
+
+    public void OnNumLinesChanged(int num)
+    {
+        var localscale = lines[0].transform.localScale;
+        foreach (var line in lines)
+        {
+            line.transform.localScale = new Vector3(num, localscale.y, localscale.z);
+        }
+    }
 }

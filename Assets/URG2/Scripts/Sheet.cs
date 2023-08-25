@@ -29,6 +29,7 @@ public class Sheet
     // [Description]
     public string title;
     public string artist;
+    public int numLines;
 
     // [Audio]
     public int bpm;

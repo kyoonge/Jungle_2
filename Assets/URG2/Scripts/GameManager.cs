@@ -169,7 +169,8 @@ public class GameManager : MonoBehaviour
         ItemGenerator.Instance.Init();
 
         // 타이틀 화면 시작
-        Title();
+        //Title();
+        Select();
     }
 
     IEnumerator IETitle()

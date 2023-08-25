@@ -31,7 +31,7 @@ public class GridGenerator : MonoBehaviour
             GameObject obj = gridList[i];
             obj.name = $"Grid_{i}";
             obj.GetComponent<GridObject>().index = i;
-            obj.transform.localPosition = Vector3.up * i * gridInterval;
+            obj.transform.localPosition = Vector3.up * (i * gridInterval);
             obj.SetActive(true);
         }
     }
@@ -41,6 +41,14 @@ public class GridGenerator : MonoBehaviour
         foreach (GameObject obj in gridList)
         {
             obj.SetActive(false);
+        }
+    }
+
+    public void OnNumLinesChanged(int num)
+    {
+        foreach (var gridObj in gridList)
+        {
+            gridObj.GetComponent<GridObject>().OnNumLinesChanged(num);
         }
     }
 }
