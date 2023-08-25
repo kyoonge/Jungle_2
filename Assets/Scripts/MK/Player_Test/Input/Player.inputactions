@@ -24,18 +24,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PrimaryAttack",
+                    "name": "Dash",
                     "type": "Button",
-                    "id": "d585575a-be73-438e-bf93-376cde391a08",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SecondaryAttack",
-                    "type": "Button",
-                    "id": "b5defe08-33d9-4011-af29-d32fbe8633b6",
+                    "id": "b9018d6e-c068-4d23-ae87-fa0f85d8cc15",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -79,7 +70,7 @@
                 {
                     "name": "down",
                     "id": "325debb4-c1e4-4d7f-bf70-a08837ea4ab4",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -133,45 +124,23 @@
                 },
                 {
                     "name": "",
-                    "id": "877ee8df-d160-46d7-900c-9cb3bfe2193c",
-                    "path": "<Keyboard>/r",
+                    "id": "cbc42097-a6b9-40e1-a9d4-4aee57ccb7e6",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "PrimaryAttack",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "d2cba497-d2a6-4981-ba38-156437ed8011",
+                    "id": "e387b5b8-d5b8-4b22-94fe-4129f915ee44",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "PrimaryAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "899e9030-675b-4901-9bbc-4ebb01383785",
-                    "path": "<Keyboard>/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "SecondaryAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9c9009c9-62b9-401c-a6a7-22631e99e876",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "SecondaryAttack",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

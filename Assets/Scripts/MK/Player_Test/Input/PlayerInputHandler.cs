@@ -8,51 +8,28 @@ public class PlayerInputHandler : MonoBehaviour
 {
     private PlayerInput playerInput;
     public Vector2 RawMovementInput { get; private set; }
+    public Vector2 RawDashDirectionInput { get; private set; }
+    public Vector2Int DashDirectionInput { get; private set; }
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
     public bool JumpInput { get; private set; }
     public bool JumpInputStop { get; private set; }
-    public bool[] AttackInputs { get; private set; }
+    public bool DashInput { get; private set; }
+    public bool DashInputStop { get; private set; }
 
     [SerializeField]
-    private float inputHoldTime = 0.2f;
+    private float inputHoldTime = 0.2f; // 대쉬 또는 점프 누르고 있는 시간
     private float jumpInputStartTime;
+    private float dashInputStartTime;
 
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
-
-        int count = Enum.GetValues(typeof(CombatInputs)).Length;
-        AttackInputs = new bool[count];
     }
 
     private void Update()
     {
         CheckJumpInputHoldTime();
-    }
-
-    public void OnPrimaryAttackInput(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            AttackInputs[(int)CombatInputs.primary] = true;
-        }
-        if (context.canceled)
-        {
-            AttackInputs[(int)CombatInputs.primary] = false;
-        }
-    }
-
-    public void OnSecondaryAttackInput(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            AttackInputs[(int)CombatInputs.secondary] = true;
-        }
-        if (context.canceled)
-        {
-            AttackInputs[(int)CombatInputs.secondary] = false;
-        }
     }
 
     public void OnMoveInput(InputAction.CallbackContext context)
@@ -61,7 +38,33 @@ public class PlayerInputHandler : MonoBehaviour
 
         NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
         NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
+        
+
     }
+
+    public void OnDashInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            DashInput = true;
+            DashInputStop = false;
+            dashInputStartTime = Time.time;
+        }
+        else if (context.canceled)
+        {
+            DashInputStop = true;
+        }
+
+        //대시 방향을 방향키 인풋으로 설정
+        RawDashDirectionInput = new Vector2(NormInputX, NormInputY);
+        DashDirectionInput = Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
+    }
+
+    //public Vector2 OnDashDirectionInput()
+    //{
+    //    RawDashDirectionInput = new Vector2(NormInputX, NormInputY);
+    //    return RawDashDirectionInput;
+    //}
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
@@ -79,6 +82,7 @@ public class PlayerInputHandler : MonoBehaviour
     }
 
     public void UseJumpInput() => JumpInput = false;
+    public void UseDashInput() => DashInput = false;
 
     private void CheckJumpInputHoldTime()
     {
@@ -87,10 +91,13 @@ public class PlayerInputHandler : MonoBehaviour
             JumpInput = false;
         }
     }
-}
-public enum CombatInputs
-{
-    primary,
-    secondary
+
+    private void CheckDashInputHoldTime()
+    {
+        if(Time.time >= dashInputStartTime + inputHoldTime)
+        {
+            DashInput = false;
+        }
+    }
 }
 

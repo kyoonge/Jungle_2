@@ -13,11 +13,19 @@ MonoBehaviour:
   m_Name: playerData
   m_EditorClassIdentifier: 
   movementVelocity: 10
-  jumpVelocity: 15
-  amoutOfJumps: 2
+  jumpVelocity: 17
+  amoutOfJumps: 1
   groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 1
+  dashCooldown: 0.5
+  maxHoldTime: 0
+  holdTimeScale: 0.25
+  dashTime: 0.2
+  dashVelocity: 30
+  drag: 10
+  dashEndYMultiplier: 0.2
+  distBetweenAfterImages: 0.5
