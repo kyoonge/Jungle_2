@@ -73,6 +73,10 @@ public class PlayerInAirState : PlayerState
             player.Anim.SetFloat("yVelocity", player.CurrentVelocity.y);
             player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
         }
+
+        //Down Gravity
+
+
     }
 
     private void CheckJumpMultiplier()

@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196493913}
   - component: {fileID: 1196493914}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DashDirectionIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,9 +314,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9023355476564951506, guid: 5987620b506a0ee46a402b9cc87d2a78, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9023355478343133440, guid: 5987620b506a0ee46a402b9cc87d2a78, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023355478343133440, guid: 5987620b506a0ee46a402b9cc87d2a78, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9023355478343133452, guid: 5987620b506a0ee46a402b9cc87d2a78, type: 3}
       propertyPath: m_RootOrder
