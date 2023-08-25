@@ -62,7 +62,6 @@ public class Player : MonoBehaviour
     {
         CurrentVelocity = RB.velocity;
         StateMachine.CurrentState.LogicUpdate();
-        Debug.Log("Can Dash?? " + DashState.CheckIfCanDash());
     }
 
     private void FixedUpdate()
