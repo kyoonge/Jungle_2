@@ -42,6 +42,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 699575941606102708}
     m_Modifications:
+    - target: {fileID: 1148806130836172140, guid: 9c94672f03efd70408141437c089ed72, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148806130836172140, guid: 9c94672f03efd70408141437c089ed72, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1179559535
+      objectReference: {fileID: 0}
     - target: {fileID: 2750409175254123712, guid: 9c94672f03efd70408141437c089ed72, type: 3}
       propertyPath: m_Name
       value: Bar_3
@@ -104,6 +112,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 699575941606102708}
     m_Modifications:
+    - target: {fileID: 1148806130836172140, guid: 9c94672f03efd70408141437c089ed72, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148806130836172140, guid: 9c94672f03efd70408141437c089ed72, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1179559535
+      objectReference: {fileID: 0}
     - target: {fileID: 2750409175254123712, guid: 9c94672f03efd70408141437c089ed72, type: 3}
       propertyPath: m_Name
       value: Bar_1
@@ -210,6 +226,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5853212926181319033, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853212926181319033, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1179559535
+      objectReference: {fileID: 0}
     - target: {fileID: 6913434044473973417, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
       propertyPath: m_Name
       value: Bar_2
@@ -271,6 +295,14 @@ PrefabInstance:
     - target: {fileID: 2171151097580934468, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853212926181319033, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853212926181319033, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1179559535
       objectReference: {fileID: 0}
     - target: {fileID: 6913434044473973417, guid: c1b2b2fbfb2ac0242a5fbf80f8acabb6, type: 3}
       propertyPath: m_Name
