@@ -10,12 +10,13 @@ namespace onLand
         private int xInput;
         private bool jumpInput;
         private bool jumpInputStop;
+        private bool groundPoundInput;
         private bool dashInput;
-        private bool thrustInput;
 
         //Checks
         private bool isGrounded;
         private bool isJumping;
+        private bool isGroundPounding;
 
         private bool coyoteTime;
 
@@ -27,7 +28,7 @@ namespace onLand
         public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
             downGravity = playerData.downGravityScale;
-            originGravity = playerData.GravityScale;
+            originGravity = playerData.gravityScale;
         }
 
         public override void DoChecks()
@@ -57,6 +58,7 @@ namespace onLand
             xInput = player.InputHandler.NormInputX;
             jumpInput = player.InputHandler.JumpInput;
             jumpInputStop = player.InputHandler.JumpInputStop;
+            groundPoundInput = player.InputHandler.GroundPoundInput;
             dashInput = player.InputHandler.DashInput;
 
             isGrounded = player.CheckIfGrounded();
@@ -73,6 +75,10 @@ namespace onLand
             {
                 stateMachine.ChangeState(player.JumpState);
             }
+            else if (groundPoundInput)
+            {
+                stateMachine.ChangeState(player.GroundPoundState);
+            }
             else if (dashInput&&player.DashState.CheckIfCanDash())
             {
                 stateMachine.ChangeState(player.DashState);
@@ -86,10 +92,9 @@ namespace onLand
                 player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
             }
 
+            // 낙하 중력 적용
             if (!isGrounded && player.CurrentVelocity.y < 0.01f)
             {
-
-                //downGravity
                 player.RB.gravityScale = downGravity;
             }
         }
@@ -126,6 +131,7 @@ namespace onLand
 
         public void StartCototeTime() => coyoteTime = true;
         public void SetIsJumping() => isJumping = true;
+        public void SetIsGroundPounding() => isGroundPounding = true;
     }
 
 }

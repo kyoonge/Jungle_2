@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb041b99674d004e9b867544f1768fb, type: 3}
   m_Name: PD_CHAN
   m_EditorClassIdentifier: 
-  movementVelocity: 10
-  jumpVelocity: 15
+  gravityScale: 5
+  movementVelocity: 7
+  jumpVelocity: 21
   amoutOfJumps: 1
-  downGravityScale: 7
-  GravityScale: 5
-  groundCheckRadius: 0
+  downGravityScale: 18
+  groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   coyoteTime: 0.2
-  variableJumpHeightMultiplier: 0.5
-  dashCooldown: 0.5
-  maxHoldTime: 1
-  holdTimeScale: 0.25
-  dashTime: 0.2
-  dashVelocity: 30
-  drag: 10
-  dashEndYMultiplier: 0.2
-  distBetweenAfterImages: 0.5
+  variableJumpHeightMultiplier: 1
+  dashCooldown: 0
+  maxHoldTime: 0
+  holdTimeScale: 0.1
+  dashTime: 0.1
+  dashVelocity: 40
+  drag: 0
+  dashEndYMultiplier: 0.5
+  distBetweenAfterImages: 15

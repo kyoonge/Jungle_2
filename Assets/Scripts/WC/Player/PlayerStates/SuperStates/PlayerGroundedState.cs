@@ -8,9 +8,10 @@ namespace onLand
     {
         protected int xInput;
         private bool JumpInput;
-        private bool isGrounded;
+        private bool groundPoundInput;
         private bool dashInput;
-        private bool thrustInput;
+        
+        private bool isGrounded;
     
         public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
@@ -51,6 +52,10 @@ namespace onLand
             else if (dashInput && player.DashState.CheckIfCanDash())
             {
                 stateMachine.ChangeState(player.DashState);
+            }
+            else if (groundPoundInput)
+            {
+                stateMachine.ChangeState(player.GroundPoundState);
             }
             else if (!isGrounded)
             {

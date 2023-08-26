@@ -7,14 +7,18 @@ namespace onLand
     [CreateAssetMenu(fileName ="newPlayerData", menuName="Data/Player Data/Chan Data")]
     public class PlayerData : ScriptableObject
     {
+        [Header("Default")]
+        public float gravityScale = 5f;
+        
         [Header("Move State")]
         public float movementVelocity = 10f;
 
         [Header("Jump State")]
         public float jumpVelocity = 15f;
         public int amoutOfJumps = 1;
-        public float downGravityScale = 7f;
-        public float GravityScale = 5f;
+        
+        [Header("GroundPound State")]
+        public float groundPoundVelocity = -30f;
 
         [Header("Check Variables")]
         public float groundCheckRadius;
@@ -23,11 +27,10 @@ namespace onLand
         [Header("In Air State")]
         public float coyoteTime = 0.2f;
         public float variableJumpHeightMultiplier = 0.5f;
+        public float downGravityScale = 7f;
 
         [Header("Dash State")]
         public float dashCooldown = 0.5f;
-        public float maxHoldTime = 1f; //슬로우모션 시간 (1f)
-        public float holdTimeScale = 0.25f; // 슬로우모션때의 시간 스케일
         public float dashTime = 0.2f; // 대시 길이
         public float dashVelocity = 30f;
         public float drag = 10f; //대시 저항 (리지드바디의 Linear Drag)

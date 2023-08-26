@@ -13,8 +13,9 @@ namespace onLand
         public PlayerJumpState JumpState { get; private set; }
         public PlayerInAirState InAirState { get; private set; }
         public PlayerLandState LandState { get; private set; }
+        public PlayerGroundPoundState GroundPoundState { get; private set; }
         public PlayerDashState DashState { get; private set; }
-        public PlayerThrustState ThrustState { get; private set; }
+        
 
         [SerializeField]
         private PlayerData playerData;
@@ -23,7 +24,6 @@ namespace onLand
         public Animator Anim { get; private set; }
         public PlayerInputHandler InputHandler { get; private set; }
         public Rigidbody2D RB { get; private set; }
-        public Transform DashDirectionIndicator { get; private set; }
 
         #endregion
 
@@ -48,15 +48,19 @@ namespace onLand
             JumpState = new PlayerJumpState(this, StateMachine, playerData, "inAir");
             InAirState = new PlayerInAirState(this, StateMachine, playerData, "inAir");
             LandState = new PlayerLandState(this, StateMachine, playerData, "land");
+            GroundPoundState = new PlayerGroundPoundState(this, StateMachine, playerData, "inAir");
             DashState = new PlayerDashState(this, StateMachine, playerData, "inAir");
         }
 
         private void Start()
         {
-            Anim = GetComponent<Animator>();
+            // Components 연결
+            Anim = transform.Find("Visual").GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             RB = GetComponent<Rigidbody2D>();
-            DashDirectionIndicator = transform.Find("DashDirectionIndicator");
+            
+            // 기본값 설정
+            RB.gravityScale = playerData.gravityScale;
             FacingDirection = 1;
 
             StateMachine.Initialize(IdleState);
