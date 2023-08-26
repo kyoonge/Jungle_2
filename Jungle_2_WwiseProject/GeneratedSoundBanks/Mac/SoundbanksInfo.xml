@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{0C19DD57-0055-44DA-3273-590F12DE58B4}">
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<Media>
+				<File Id="117990375" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TestSong_90bpm.wav</ShortName>
+					<CachePath>SFX/TestSong_90bpm_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="452104948" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>KeySound.wav</ShortName>
+					<CachePath>SFX/KeySound_10C4C929.wem</CachePath>
+				</File>
+				<File Id="564059900" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CountDown.wav</ShortName>
+					<CachePath>SFX/CountDown_53D9D278.wem</CachePath>
+				</File>
+				<File Id="686272057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MainSong_1.wav</ShortName>
+					<CachePath>SFX/MainSong_1_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1505888634" Name="CountDown" DurationType="OneShot" DurationMin="4.0063825" DurationMax="4.0063825">
+					<MediaRefs>
+						<MediaRef Id="564059900"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2641283287" Name="KeySound" DurationType="OneShot" DurationMin="0.09351474" DurationMax="0.09351474">
+					<MediaRefs>
+						<MediaRef Id="452104948"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="92.09097" DurationMax="92.09097">
+					<MediaRefs>
+						<MediaRef Id="686272057"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="118783190" Name="TestSong" DurationType="OneShot" DurationMin="13.693587" DurationMax="13.693587">
+					<MediaRefs>
+						<MediaRef Id="117990375"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{6AC908D7-C6C6-ADE1-DC74-EBD463F488C5}</FileHash>
+</SoundBanksInfo>
