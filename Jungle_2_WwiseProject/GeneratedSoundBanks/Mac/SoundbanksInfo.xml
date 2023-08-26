@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{1CC1B88B-C4DC-9E07-406D-BFAF68B09B1D}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{0C19DD57-0055-44DA-3273-590F12DE58B4}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -36,7 +36,7 @@
 				</File>
 				<File Id="564059900" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CountDown.wav</ShortName>
-					<CachePath>SFX/CountDown_445FF513.wem</CachePath>
+					<CachePath>SFX/CountDown_53D9D278.wem</CachePath>
 				</File>
 				<File Id="686272057" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MainSong_1.wav</ShortName>
@@ -67,5 +67,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EE0D8065-0F26-DFB9-AC67-DD296A1E56D2}</FileHash>
+	<FileHash>{6AC908D7-C6C6-ADE1-DC74-EBD463F488C5}</FileHash>
 </SoundBanksInfo>

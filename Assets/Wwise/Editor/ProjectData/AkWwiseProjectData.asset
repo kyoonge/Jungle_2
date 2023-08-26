@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: aedaa4ddc4cf78459fe57bda3ffd5c85
     GuidInternal: 
-    m_lastTime: -8585085575176332736
-    List: []
+    m_lastTime: -8585085510305017608
+    List:
+    - name: Master
+      guid: c38ef160a8acce40b984200f143d0cd9
+      id: 4056684167
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aedaa4ddc4cf78459fe57bda3ffd5c85
+      - ElementName: Master
+        ObjectType: 7
+        guid: c38ef160a8acce40b984200f143d0cd9
+      Path: SoundBanks\Default Work Unit\Master
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,76 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f9bc784e509e746b0560daff5b504cd
     GuidInternal: 
-    m_lastTime: -8585085575176522721
-    List: []
+    m_lastTime: -8585085508715698584
+    List:
+    - name: CountDown
+      guid: 93c394be208b324ab1cd087e63c3a01f
+      id: 1505888634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f9bc784e509e746b0560daff5b504cd
+      - ElementName: CountDown
+        ObjectType: 3
+        guid: 93c394be208b324ab1cd087e63c3a01f
+      Path: Events\Default Work Unit\CountDown
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: KeySound
+      guid: a084443d984465449dd3eed89566e315
+      id: 2641283287
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f9bc784e509e746b0560daff5b504cd
+      - ElementName: KeySound
+        ObjectType: 3
+        guid: a084443d984465449dd3eed89566e315
+      Path: Events\Default Work Unit\KeySound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainSong
+      guid: ffbef9d7fd065b4a916cb1cc0b2877b9
+      id: 3863200005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f9bc784e509e746b0560daff5b504cd
+      - ElementName: MainSong
+        ObjectType: 3
+        guid: ffbef9d7fd065b4a916cb1cc0b2877b9
+      Path: Events\Default Work Unit\MainSong
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TestSong
+      guid: 15940089c943c04497842ec189ca910a
+      id: 118783190
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f9bc784e509e746b0560daff5b504cd
+      - ElementName: TestSong
+        ObjectType: 3
+        guid: 15940089c943c04497842ec189ca910a
+      Path: Events\Default Work Unit\TestSong
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
