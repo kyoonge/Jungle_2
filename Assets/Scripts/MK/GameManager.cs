@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public static GameManager Instance { get { Init(); return _instance; } }
+    //private readonly UIManager _ui = new UIManager();
+    //public static UIManager UI => _instance._ui;
 
     public bool isRestart;
     public int level; // Easy=0, Hard=1
@@ -24,7 +26,17 @@ public class GameManager : MonoBehaviour
 
             DontDestroyOnLoad(go);
             _instance = go.GetComponent<GameManager>();
-
+            
+            //ui매니저 초기화
+            //_instance._ui.Init();
+        }
+        
+        //Stage씬은 3초 카운트다운으로 시작
+        if(SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <=4)
+        {
+            UIManager.instance.CountDown();
+            //UI.CountDown();
+            //CountDown();
         }
     }
 
@@ -51,6 +63,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("Restart");
             ReloadScene();
         }
+    }
+
+    public void CountDown()
+    {
+
     }
 
     public void StartGame()

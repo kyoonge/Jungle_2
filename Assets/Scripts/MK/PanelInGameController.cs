@@ -17,7 +17,7 @@ public class PanelInGameController : MonoBehaviour
     }
 
     //HP 줄어들기 시작 함수_ 카운트 다운 후 실행
-    public void  startHP()
+    public void startHP()
     {
         StartCoroutine("DecreaseHPBarCoroutine");
     }
