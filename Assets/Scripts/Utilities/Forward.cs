@@ -15,7 +15,7 @@ public class Forward : MonoBehaviour
     private void FixedUpdate()
     {
         var curPosition = transform.position;
-        var newPosition = curPosition + transform.up*-1;
+        var newPosition = curPosition + transform.up * -1;
         transform.position = Vector3.Lerp(curPosition, newPosition, Time.deltaTime * moveSpeed);
     }
 }

@@ -48,9 +48,9 @@ TagManager:
   - name: Note
     uniqueID: 1978089239
     locked: 0
-  - name: Player
-    uniqueID: 103552773
-    locked: 0
   - name: Platform
     uniqueID: 528509713
+    locked: 0
+  - name: Player
+    uniqueID: 103552773
     locked: 0
