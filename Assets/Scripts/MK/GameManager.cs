@@ -53,6 +53,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("StageLoby");
+    }
+
+    public void StartStage()
+    {
+
+    }
+
     void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

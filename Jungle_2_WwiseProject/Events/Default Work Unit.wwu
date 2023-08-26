@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MainSong" ID="{D7F9BEFF-06FD-4A5B-916C-B1CC0B2877B9}">
+					<ChildrenList>
+						<Action Name="" ID="{A6937B40-6977-4D39-BC21-663332118AF2}" ShortID="69989410">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainSong" ID="{D7AFC62C-D758-4789-BFC2-8E3A55A9C9DA}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TestSong" ID="{89009415-43C9-44C0-9784-2EC189CA910A}">
+					<ChildrenList>
+						<Action Name="" ID="{E74A68F8-10EA-4C12-8C6F-0802B22CBA79}" ShortID="1068663666">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TestSong" ID="{0F3B99AB-53FB-4AEB-B4F4-DC9F15526C4F}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="KeySound" ID="{3D4484A0-4498-4465-9DD3-EED89566E315}">
+					<ChildrenList>
+						<Action Name="" ID="{9919AA4A-37DF-4C4D-845F-C3DCA6CB5748}" ShortID="6651906">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KeySound" ID="{4A3D9983-5937-4A0B-8973-119A69655E48}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CountDown" ID="{BE94C393-8B20-4A32-B1CD-087E63C3A01F}">
+					<ChildrenList>
+						<Action Name="" ID="{9A923D8A-B090-4785-9E00-8C2BA356FD33}" ShortID="952055569">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoundDown" ID="{7C1AD051-3F2C-4EA1-9808-5827E5E78FAE}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

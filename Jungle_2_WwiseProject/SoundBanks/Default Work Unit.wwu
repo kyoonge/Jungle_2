@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DDA4DAAE-CFC4-4578-9FE5-7BDA3FFD5C85}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{DDA4DAAE-CFC4-4578-9FE5-7BDA3FFD5C85}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DDA4DAAE-CFC4-4578-9FE5-7BDA3FFD5C85}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Master" ID="{60F18EC3-ACA8-40CE-B984-200F143D0CD9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="KeySound" ID="{3D4484A0-4498-4465-9DD3-EED89566E315}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TestSong" ID="{89009415-43C9-44C0-9784-2EC189CA910A}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CountDown" ID="{BE94C393-8B20-4A32-B1CD-087E63C3A01F}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainSong" ID="{D7F9BEFF-06FD-4A5B-916C-B1CC0B2877B9}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

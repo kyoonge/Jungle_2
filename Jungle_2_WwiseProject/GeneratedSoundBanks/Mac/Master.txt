@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	118783190	TestSong			\Default Work Unit\TestSong	
+	1505888634	CountDown			\Default Work Unit\CountDown	
+	2641283287	KeySound			\Default Work Unit\KeySound	
+	3863200005	MainSong			\Default Work Unit\MainSong	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	117990375	TestSong_90bpm	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Mac\SFX\TestSong_90bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TestSong\TestSong_90bpm		2410896
+	452104948	KeySound	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Mac\SFX\KeySound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KeySound		16656
+	564059900	CoundDown	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Mac\SFX\CountDown_445FF513.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoundDown		706820
+	686272057	MainSong_1	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Mac\SFX\MainSong_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainSong\MainSong_1		15715744
+
