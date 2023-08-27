@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
     public void CountDown()
     {
         StartCoroutine("CountdownCoroutine");
+        AkSoundEngine.PostEvent("TestSong", gameObject);
     }
 
     public IEnumerator CountdownCoroutine()
@@ -47,6 +48,7 @@ public class UIManager : MonoBehaviour
             txtCount.text = countdownTime.ToString();
             yield return new WaitForSecondsRealtime(1f);
             countdownTime--;
+            AkSoundEngine.PostEvent("Count", gameObject);
         }
 
         txtCount.text = "GO!";
@@ -54,6 +56,7 @@ public class UIManager : MonoBehaviour
         txtCount.gameObject.SetActive(false);
         Time.timeScale = 1;
 
+        
         //start HP system
         panelIngameController.startHP();
     }

@@ -25,7 +25,7 @@
 						<ActiveSource Name="KeySound" ID="{9D5A6636-9D67-4229-9A75-E419E10F0BBC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="CoundDown" ID="{7C1AD051-3F2C-4EA1-9808-5827E5E78FAE}" ShortID="183641341">
+				<Sound Name="CountDown" ID="{084E21BF-3449-41DD-852F-31C54EB1FC5F}" ShortID="588698027">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F322D9CA-9C66-40B5-8AE0-5EF4ABCF5150}"/>
@@ -35,21 +35,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="CountDown" ID="{64C34607-9E3C-4B91-9C55-F9B516C6BF86}">
-							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="0"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="4.00638261950679"/>
-							</PropertyList>
+						<AudioFileSource Name="BNDLZ_perc_one_shot_clock_01" ID="{9C9BA591-BF67-43CC-8FC7-D15E92175110}">
 							<Language>SFX</Language>
-							<AudioFile>CountDown.wav</AudioFile>
+							<AudioFile>BNDLZ_perc_one_shot_clock_01.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="564059900"/>
+								<MediaID ID="273663118"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="CountDown" ID="{64C34607-9E3C-4B91-9C55-F9B516C6BF86}" Platform="Linked"/>
+						<ActiveSource Name="BNDLZ_perc_one_shot_clock_01" ID="{9C9BA591-BF67-43CC-8FC7-D15E92175110}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{0C19DD57-0055-44DA-3273-590F12DE58B4}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{449246E6-B5DD-D36D-780D-A7FD3AA61F3D}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -30,13 +30,13 @@
 					<ShortName>TestSong_90bpm.wav</ShortName>
 					<CachePath>SFX/TestSong_90bpm_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="273663118" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BNDLZ_perc_one_shot_clock_01.wav</ShortName>
+					<CachePath>SFX/BNDLZ_perc_one_shot_clock_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="452104948" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>KeySound.wav</ShortName>
 					<CachePath>SFX/KeySound_10C4C929.wem</CachePath>
-				</File>
-				<File Id="564059900" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>CountDown.wav</ShortName>
-					<CachePath>SFX/CountDown_53D9D278.wem</CachePath>
 				</File>
 				<File Id="686272057" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MainSong_1.wav</ShortName>
@@ -44,9 +44,9 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1505888634" Name="CountDown" DurationType="OneShot" DurationMin="4.0063825" DurationMax="4.0063825">
+				<Event Id="2938671170" Name="Count" DurationType="OneShot" DurationMin="0.8" DurationMax="0.8">
 					<MediaRefs>
-						<MediaRef Id="564059900"/>
+						<MediaRef Id="273663118"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2641283287" Name="KeySound" DurationType="OneShot" DurationMin="0.09351474" DurationMax="0.09351474">
@@ -54,12 +54,12 @@
 						<MediaRef Id="452104948"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="92.09097" DurationMax="92.09097">
+				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="91.09097" DurationMax="91.09097">
 					<MediaRefs>
 						<MediaRef Id="686272057"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="118783190" Name="TestSong" DurationType="OneShot" DurationMin="13.693587" DurationMax="13.693587">
+				<Event Id="118783190" Name="TestSong" DurationType="OneShot" DurationMin="15.693587" DurationMax="15.693587">
 					<MediaRefs>
 						<MediaRef Id="117990375"/>
 					</MediaRefs>
@@ -67,5 +67,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6AC908D7-C6C6-ADE1-DC74-EBD463F488C5}</FileHash>
+	<FileHash>{9511EC54-E5DE-69EE-A317-BF8B335A70A6}</FileHash>
 </SoundBanksInfo>
