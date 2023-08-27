@@ -75,26 +75,32 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("StageLoby");
     }
 
-/*    public void TutorialStage()
-    {
+    /*    public void TutorialStage()
+        {
 
-        SceneManager.LoadScene("Stage");
+            SceneManager.LoadScene("Stage");
+        }
+
+        public void StartStageEasy()
+        {
+            SceneManager.LoadScene("Stage");
+        }
+
+        public void StartStageHard()
+        {
+            SceneManager.LoadScene("Stage");
+        }*/
+
+    public void LoadScene(int SceneIndex)
+    {
+        SceneManager.LoadScene(SceneIndex);
     }
-
-    public void StartStageEasy()
-    {
-        SceneManager.LoadScene("Stage");
-    }
-
-    public void StartStageHard()
-    {
-        SceneManager.LoadScene("Stage");
-    }*/
 
     void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 
     public void ExitGame()
     {
