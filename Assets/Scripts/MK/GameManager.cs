@@ -30,13 +30,17 @@ public class GameManager : MonoBehaviour
             //ui매니저 초기화
             //_instance._ui.Init();
         }
-        
+
         //Stage씬은 3초 카운트다운으로 시작
-        if(SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <=4)
+        if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <= 4)
         {
             UIManager.instance.CountDown();
             //UI.CountDown();
             //CountDown();
+        }
+        else if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+
         }
     }
 
@@ -90,7 +94,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneIndex);
     }
 
-    void ReloadScene()
+    public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

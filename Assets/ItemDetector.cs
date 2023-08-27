@@ -13,7 +13,7 @@ public class ItemDetector : MonoBehaviour
 
     private void Start()
     {
-        item = transform.Find("Item").gameObject;
+        //item = transform.Find("Item").gameObject;
     }
 
     private bool isDetectObjectsAhead()
