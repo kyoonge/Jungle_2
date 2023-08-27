@@ -7,7 +7,7 @@
 					<ChildrenList>
 						<Action Name="" ID="{A6937B40-6977-4D39-BC21-663332118AF2}" ShortID="69989410">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="3"/>
+								<Property Name="Delay" Type="Real64" Value="5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -21,7 +21,7 @@
 					<ChildrenList>
 						<Action Name="" ID="{E74A68F8-10EA-4C12-8C6F-0802B22CBA79}" ShortID="1068663666">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="3"/>
+								<Property Name="Delay" Type="Real64" Value="5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -42,14 +42,26 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="CountDown" ID="{BE94C393-8B20-4A32-B1CD-087E63C3A01F}">
+				<Event Name="Count" ID="{47C4242D-B2D5-4C1E-90E2-BA05C7AA4630}">
 					<ChildrenList>
-						<Action Name="" ID="{9A923D8A-B090-4785-9E00-8C2BA356FD33}" ShortID="952055569">
+						<Action Name="" ID="{7161D29C-691C-443E-8247-EB0EF210C447}" ShortID="128327239">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CoundDown" ID="{7C1AD051-3F2C-4EA1-9808-5827E5E78FAE}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+									<ObjectRef Name="CountDown" ID="{084E21BF-3449-41DD-852F-31C54EB1FC5F}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GameOver" ID="{57AE03D4-D075-407C-B415-67EF7BC7D9FF}">
+					<ChildrenList>
+						<Action Name="" ID="{0E4415D2-F02A-46DF-A4A2-8F6662878874}" ShortID="717570559">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

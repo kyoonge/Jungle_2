@@ -47,6 +47,7 @@ public class UIManager : MonoBehaviour
             txtCount.text = countdownTime.ToString();
             yield return new WaitForSecondsRealtime(1f);
             countdownTime--;
+            AkSoundEngine.PostEvent("Count", gameObject);
         }
 
         txtCount.text = "GO!";
@@ -54,6 +55,7 @@ public class UIManager : MonoBehaviour
         txtCount.gameObject.SetActive(false);
         Time.timeScale = 1;
 
+        
         //start HP system
         panelIngameController.startHP();
     }
