@@ -7,7 +7,7 @@
 					<ChildrenList>
 						<Action Name="" ID="{A6937B40-6977-4D39-BC21-663332118AF2}" ShortID="69989410">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -50,6 +50,18 @@
 									<ObjectRef Name="CountDown" ID="{084E21BF-3449-41DD-852F-31C54EB1FC5F}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GameOver" ID="{57AE03D4-D075-407C-B415-67EF7BC7D9FF}">
+					<ChildrenList>
+						<Action Name="" ID="{0E4415D2-F02A-46DF-A4A2-8F6662878874}" ShortID="717570559">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

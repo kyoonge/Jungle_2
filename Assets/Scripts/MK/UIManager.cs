@@ -36,7 +36,6 @@ public class UIManager : MonoBehaviour
     public void CountDown()
     {
         StartCoroutine("CountdownCoroutine");
-        AkSoundEngine.PostEvent("TestSong", gameObject);
     }
 
     public IEnumerator CountdownCoroutine()

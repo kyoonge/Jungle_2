@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: aedaa4ddc4cf78459fe57bda3ffd5c85
     GuidInternal: 
-    m_lastTime: -8585084940550716093
+    m_lastTime: -8585084923037426366
     List:
     - name: Master
       guid: c38ef160a8acce40b984200f143d0cd9
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f9bc784e509e746b0560daff5b504cd
     GuidInternal: 
-    m_lastTime: -8585084938589295877
+    m_lastTime: -8585084907641698621
     List:
     - name: Count
       guid: 2d24c447d5b21e4c90e2ba05c7aa4630
@@ -110,6 +110,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2d24c447d5b21e4c90e2ba05c7aa4630
       Path: Events\Default Work Unit\Count
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: GameOver
+      guid: d403ae5775d07c40b41567ef7bc7d9ff
+      id: 4158285989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f9bc784e509e746b0560daff5b504cd
+      - ElementName: GameOver
+        ObjectType: 3
+        guid: d403ae5775d07c40b41567ef7bc7d9ff
+      Path: Events\Default Work Unit\GameOver
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -220,7 +237,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585085575176042740
     List: []
-  ExpandedFileSystemItemIds: 0400000005000000
+  ExpandedFileSystemItemIds: 020000000300000004000000050000000d0000000e000000
   ExpandedWaapiItemIds: 0200000003000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

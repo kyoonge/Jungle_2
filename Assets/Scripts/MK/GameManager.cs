@@ -65,31 +65,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void CountDown()
-    {
-
-    }
-
     public void StartGame()
     {
         SceneManager.LoadScene("StageLoby");
     }
 
-    /*    public void TutorialStage()
-        {
+    public void TutorialStage()
+    {
+        SceneManager.LoadScene("Stage");
+    }
 
-            SceneManager.LoadScene("Stage");
-        }
+    public void StartStageEasy()
+    {
+        SceneManager.LoadScene("Stage2");
+    }
 
-        public void StartStageEasy()
-        {
-            SceneManager.LoadScene("Stage");
-        }
-
-        public void StartStageHard()
-        {
-            SceneManager.LoadScene("Stage");
-        }*/
+    public void StartStageHard()
+    {
+        SceneManager.LoadScene("Stage3");
+    }
 
     public void LoadScene(int SceneIndex)
     {
@@ -101,6 +95,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    private void GameOver()
+    {
+        AkSoundEngine.PostEvent("GameOver", gameObject);
+    }
 
     public void ExitGame()
     {

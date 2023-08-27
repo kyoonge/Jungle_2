@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2641283287	KeySound			\Default Work Unit\KeySound	
 	2938671170	Count			\Default Work Unit\Count	
 	3863200005	MainSong			\Default Work Unit\MainSong	
+	4158285989	GameOver			\Default Work Unit\GameOver	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	117990375	TestSong_90bpm	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\TestSong_90bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TestSong\TestSong_90bpm		2410896

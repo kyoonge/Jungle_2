@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{449246E6-B5DD-D36D-780D-A7FD3AA61F3D}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{3EE9C5CB-BFBB-5A32-0710-1C9843481425}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -49,12 +49,13 @@
 						<MediaRef Id="273663118"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4158285989" Name="GameOver" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2641283287" Name="KeySound" DurationType="OneShot" DurationMin="0.09351474" DurationMax="0.09351474">
 					<MediaRefs>
 						<MediaRef Id="452104948"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="91.09097" DurationMax="91.09097">
+				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="94.09097" DurationMax="94.09097">
 					<MediaRefs>
 						<MediaRef Id="686272057"/>
 					</MediaRefs>
@@ -67,5 +68,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{04F0E289-3ABE-E61E-BC7D-895C885DC459}</FileHash>
+	<FileHash>{092563A8-4D16-90BD-8AFE-2E74C18F3290}</FileHash>
 </SoundBanksInfo>
