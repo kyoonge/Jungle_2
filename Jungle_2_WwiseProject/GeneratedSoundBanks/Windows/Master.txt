@@ -1,13 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
 	118783190	TestSong			\Default Work Unit\TestSong	
-	2641283287	KeySound			\Default Work Unit\KeySound	
 	2938671170	Count			\Default Work Unit\Count	
+	2978212717	ItemSound			\Default Work Unit\ItemSound	
 	3863200005	MainSong			\Default Work Unit\MainSong	
+	3937133458	NoteSound			\Default Work Unit\NoteSound	
 	4158285989	GameOver			\Default Work Unit\GameOver	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	117990375	TestSong_90bpm	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\TestSong_90bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TestSong\TestSong_90bpm		2410896
+	76875162	NoteSound	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\Sphinx_Tambourine_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NoteSound		152308
+	117990375	TestSong_90bpm	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\TestSong_90bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TestMusic\TestSong\TestSong_90bpm		2410896
+	158859358	ItemSound	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\NATHAN_CHAPMAN_tambourine_one_shot_bonfire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ItemSound		142748
 	273663118	CountDown	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\BNDLZ_perc_one_shot_clock_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CountDown		141216
-	452104948	KeySound	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\KeySound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\KeySound		16656
 	686272057	MainSong_1	C:\Jungle_2\Jungle_2_WwiseProject\.cache\Windows\SFX\MainSong_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainSong\MainSong_1		15715744
 

@@ -15,8 +15,9 @@ namespace AK
     {
         static const AkUniqueID COUNT = 2938671170U;
         static const AkUniqueID GAMEOVER = 4158285989U;
-        static const AkUniqueID KEYSOUND = 2641283287U;
+        static const AkUniqueID ITEMSOUND = 2978212717U;
         static const AkUniqueID MAINSONG = 3863200005U;
+        static const AkUniqueID NOTESOUND = 3937133458U;
         static const AkUniqueID TESTSONG = 118783190U;
     } // namespace EVENTS
 
