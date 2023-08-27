@@ -55,7 +55,6 @@ namespace onLand
 
         public IEnumerator ExitKeyEffect()
         {
-            StopCoroutine(EnterKeyEffect());
             for (float f = 1f; f > 0f; f -= 0.01f)
             {
                 Color c = effectSpriteRenderer.material.color;

@@ -23,6 +23,8 @@ namespace onLand
         //variables
         private float downGravity;
         private float originGravity;
+        
+        private float inAirVelocityX;
 
 
         public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
@@ -65,9 +67,7 @@ namespace onLand
 
             if (isGrounded && player.CurrentVelocity.y < 0.01f)
             {
-                Debug.Log("Go Down");
-
-                //downGravity back
+                // DownGravity ÇØÁ¦
                 player.RB.gravityScale = originGravity;
                 stateMachine.ChangeState(player.LandState);
             }
@@ -75,18 +75,18 @@ namespace onLand
             {
                 stateMachine.ChangeState(player.JumpState);
             }
-            else if (groundPoundInput)
+            else if (groundPoundInput && player.GroundPoundState.CheckIfCanGroundPound())
             {
                 stateMachine.ChangeState(player.GroundPoundState);
             }
-            else if (dashInput&&player.DashState.CheckIfCanDash())
+            else if (dashInput && player.DashState.CheckIfCanDash())
             {
                 stateMachine.ChangeState(player.DashState);
             }
             else
             {
                 player.CheckIfShouldFlip(xInput);
-                player.SetVelocityX(playerData.movementVelocity * xInput);
+                player.SetVelocityX(playerData.inAirVelocity * xInput);
 
                 player.Anim.SetFloat("yVelocity", player.CurrentVelocity.y);
                 player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));

@@ -7,7 +7,7 @@ namespace onLand
     public class PlayerGroundedState : PlayerState
     {
         protected int xInput;
-        private bool JumpInput;
+        private bool jumpInput;
         private bool groundPoundInput;
         private bool dashInput;
         
@@ -41,22 +41,21 @@ namespace onLand
             base.LogicUpdate();
     
             xInput = player.InputHandler.NormInputX;
-            JumpInput = player.InputHandler.JumpInput;
+            jumpInput = player.InputHandler.JumpInput;
             dashInput = player.InputHandler.DashInput;
     
-            if (JumpInput && player.JumpState.CanJump())
+            if (jumpInput && player.JumpState.CanJump())
             {
-                player.InputHandler.UseJumpInput();
                 stateMachine.ChangeState(player.JumpState);
             }
             else if (dashInput && player.DashState.CheckIfCanDash())
             {
                 stateMachine.ChangeState(player.DashState);
             }
-            else if (groundPoundInput)
+            /*else if (groundPoundInput && player.GroundPoundState.CheckIfCanGroundPound())
             {
                 stateMachine.ChangeState(player.GroundPoundState);
-            }
+            }*/
             else if (!isGrounded)
             {
                 player.InAirState.StartCototeTime();

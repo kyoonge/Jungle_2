@@ -17,8 +17,7 @@ namespace onLand
         public PlayerDashState DashState { get; private set; }
         
 
-        [SerializeField]
-        private PlayerData playerData;
+        public PlayerData playerData;
         #endregion
         #region Components
         public Animator Anim { get; private set; }

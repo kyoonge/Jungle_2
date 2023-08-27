@@ -32,7 +32,7 @@ namespace onLand
             DoChecks();
             player.Anim.SetBool(animBoolName, true);
             startTime = Time.time;
-            Debug.Log(animBoolName);
+            //Debug.Log(animBoolName);
             isAnimationFinished = false;
             isExitingState = false;
         }
@@ -50,7 +50,7 @@ namespace onLand
 
         public virtual void PhysicsUpdate()
         {
-
+            DoChecks();
         }
 
         public virtual void DoChecks() {  }

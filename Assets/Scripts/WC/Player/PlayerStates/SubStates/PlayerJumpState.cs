@@ -16,6 +16,7 @@ namespace onLand
         {
             base.Enter();
 
+            player.InputHandler.UseJumpInput();
             player.SetVelocityY(playerData.jumpVelocity);
             isAbilityDone = true;
             amountOfJumpsLeft--;

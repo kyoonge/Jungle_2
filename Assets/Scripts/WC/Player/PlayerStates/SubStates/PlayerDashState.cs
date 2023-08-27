@@ -8,6 +8,8 @@ namespace onLand
     {
         public bool CanDash { get; private set; }
 
+        private bool isDashOnApex;
+
         private float lastDashTime;
 
         private Vector2 dashDirection;
@@ -22,6 +24,8 @@ namespace onLand
 
             CanDash = false;
             player.InputHandler.UseDashInput();
+
+            isDashOnApex = playerData.isDashOnApex;
 
             dashDirection = Vector2.right * player.FacingDirection;
 
@@ -63,6 +67,13 @@ namespace onLand
 
         public bool CheckIfCanDash()
         {
+            if (isDashOnApex)
+            {
+                if (player.RB.velocity.y > 0f)
+                {
+                    return false;
+                }
+            }
             return CanDash && Time.time >= lastDashTime + playerData.dashCooldown;
         }
 

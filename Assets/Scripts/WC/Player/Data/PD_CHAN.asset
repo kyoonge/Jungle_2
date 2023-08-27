@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: PD_CHAN
   m_EditorClassIdentifier: 
   gravityScale: 5
-  movementVelocity: 7
+  movementVelocity: 6
+  jumpInputHoldTime: 0.2
   jumpVelocity: 21
   amoutOfJumps: 1
-  downGravityScale: 18
+  groundPoundVelocity: -30
+  dashInputHoldTime: 0.2
+  dashCooldown: 0
+  dashTime: 0.1
+  dashVelocity: 40
+  dashEndYMultiplier: 0.5
+  distBetweenAfterImages: 15
   groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 1
-  dashCooldown: 0
-  maxHoldTime: 0
-  holdTimeScale: 0.1
-  dashTime: 0.1
-  dashVelocity: 40
-  drag: 0
-  dashEndYMultiplier: 0.5
-  distBetweenAfterImages: 15
+  downGravityScale: 18

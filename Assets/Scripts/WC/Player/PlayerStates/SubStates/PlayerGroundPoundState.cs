@@ -13,6 +13,7 @@ namespace onLand
         public override void Enter()
         {
             base.Enter();
+            Debug.Log("Enter GroundPoundState");
             
             player.InputHandler.UseGroundPoundInput();
             
@@ -39,6 +40,11 @@ namespace onLand
                     isAbilityDone = true;
                 }
             }
+        }
+
+        public bool CheckIfCanGroundPound()
+        {
+            return !player.CheckIfGrounded();
         }
     }
 }
