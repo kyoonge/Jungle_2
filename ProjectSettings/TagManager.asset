@@ -45,6 +45,12 @@ TagManager:
   - name: Background
     uniqueID: 4289876895
     locked: 0
+  - name: Sheet
+    uniqueID: 2664102005
+    locked: 0
+  - name: Grid
+    uniqueID: 3567564145
+    locked: 0
   - name: Note
     uniqueID: 1978089239
     locked: 0
