@@ -4,6 +4,8 @@
 		<UserProjectSettings Name="" ID="{D4AE8F09-D29C-4782-A61B-2EA18DA27557}">
 			<PropertyList>
 				<Property Name="ControlSurfaceBindingCtrl\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{05AC9BF9-3904-4023-8673-6AC3F6F2CEAB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1BAF8FA2-1B8B-4F0B-8D9A-C390586C75EA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3D4484A0-4498-4465-9DD3-EED89566E315}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{47C4242D-B2D5-4C1E-90E2-BA05C7AA4630}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{57AE03D4-D075-407C-B415-67EF7BC7D9FF}\x64_Expand States" Type="string" Value=""/>

@@ -22,18 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSong" ID="{0F3B99AB-53FB-4AEB-B4F4-DC9F15526C4F}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="KeySound" ID="{3D4484A0-4498-4465-9DD3-EED89566E315}">
-					<ChildrenList>
-						<Action Name="" ID="{9919AA4A-37DF-4C4D-845F-C3DCA6CB5748}" ShortID="6651906">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="KeySound" ID="{4A3D9983-5937-4A0B-8973-119A69655E48}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+									<ObjectRef Name="TestMusic" ID="{F1CEF429-BB53-40B5-8A3A-8D40710AAAD4}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -59,6 +48,28 @@
 								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NoteSound" ID="{1BAF8FA2-1B8B-4F0B-8D9A-C390586C75EA}">
+					<ChildrenList>
+						<Action Name="" ID="{F7914694-8CD2-4423-BAE4-BB71055ECBFD}" ShortID="327667513">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NoteSound" ID="{980A9247-651F-4841-B1ED-5C4DDF17FCD8}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ItemSound" ID="{05AC9BF9-3904-4023-8673-6AC3F6F2CEAB}">
+					<ChildrenList>
+						<Action Name="" ID="{F6CB5C00-FE89-4349-93A1-EB27D32840EA}" ShortID="27605586">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ItemSound" ID="{0CBE6C9F-ABA7-4961-808C-EDC60E02A170}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
