@@ -6,9 +6,6 @@
 				<Event Name="MainSong" ID="{D7F9BEFF-06FD-4A5B-916C-B1CC0B2877B9}">
 					<ChildrenList>
 						<Action Name="" ID="{A6937B40-6977-4D39-BC21-663332118AF2}" ShortID="69989410">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="5"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MainSong" ID="{D7AFC62C-D758-4789-BFC2-8E3A55A9C9DA}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
