@@ -8,7 +8,7 @@ public class Metronome : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            AkSoundEngine.PostEvent("Count", gameObject);
+            //AkSoundEngine.PostEvent("Count", gameObject);
             Destroy(gameObject);
         }
     }
