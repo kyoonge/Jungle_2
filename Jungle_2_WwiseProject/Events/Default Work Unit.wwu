@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MainSong" ID="{D7F9BEFF-06FD-4A5B-916C-B1CC0B2877B9}">
+					<ChildrenList>
+						<Action Name="" ID="{A6937B40-6977-4D39-BC21-663332118AF2}" ShortID="69989410">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainSong_1" ID="{4544AC78-3E23-4BE2-B586-78C7D273A8FB}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TestSong" ID="{89009415-43C9-44C0-9784-2EC189CA910A}">
+					<ChildrenList>
+						<Action Name="" ID="{E74A68F8-10EA-4C12-8C6F-0802B22CBA79}" ShortID="1068663666">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TestSong_90bpm" ID="{5F4C841F-6565-4957-81B6-89E37E2EF4CF}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Count" ID="{47C4242D-B2D5-4C1E-90E2-BA05C7AA4630}">
+					<ChildrenList>
+						<Action Name="" ID="{7161D29C-691C-443E-8247-EB0EF210C447}" ShortID="128327239">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CountDown" ID="{084E21BF-3449-41DD-852F-31C54EB1FC5F}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NoteSound" ID="{1BAF8FA2-1B8B-4F0B-8D9A-C390586C75EA}">
+					<ChildrenList>
+						<Action Name="" ID="{F7914694-8CD2-4423-BAE4-BB71055ECBFD}" ShortID="327667513">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NoteSound" ID="{980A9247-651F-4841-B1ED-5C4DDF17FCD8}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ItemSound" ID="{05AC9BF9-3904-4023-8673-6AC3F6F2CEAB}">
+					<ChildrenList>
+						<Action Name="" ID="{F6CB5C00-FE89-4349-93A1-EB27D32840EA}" ShortID="27605586">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ItemSound" ID="{0CBE6C9F-ABA7-4961-808C-EDC60E02A170}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FadeOut" ID="{EAFD824E-742A-461E-BD9E-BBFA25F5FBF9}">
+					<ChildrenList>
+						<Action Name="" ID="{CAB75BCE-4B89-4E87-83AD-2A18E8771C3C}" ShortID="379278406">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainSong_1" ID="{4544AC78-3E23-4BE2-B586-78C7D273A8FB}" WorkUnitID="{1C16F257-027C-4476-8D34-7F584732A911}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

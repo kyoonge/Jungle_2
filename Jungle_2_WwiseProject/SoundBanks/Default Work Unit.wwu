@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DDA4DAAE-CFC4-4578-9FE5-7BDA3FFD5C85}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{DDA4DAAE-CFC4-4578-9FE5-7BDA3FFD5C85}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Master" ID="{60F18EC3-ACA8-40CE-B984-200F143D0CD9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ItemSound" ID="{05AC9BF9-3904-4023-8673-6AC3F6F2CEAB}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TestSong" ID="{89009415-43C9-44C0-9784-2EC189CA910A}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FadeOut" ID="{EAFD824E-742A-461E-BD9E-BBFA25F5FBF9}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainSong" ID="{D7F9BEFF-06FD-4A5B-916C-B1CC0B2877B9}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Count" ID="{47C4242D-B2D5-4C1E-90E2-BA05C7AA4630}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NoteSound" ID="{1BAF8FA2-1B8B-4F0B-8D9A-C390586C75EA}" WorkUnitID="{84C79B5F-09E5-46E7-B056-0DAFF5B504CD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

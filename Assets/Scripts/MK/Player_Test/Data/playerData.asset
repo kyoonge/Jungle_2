@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: playerData
   m_EditorClassIdentifier: 
   movementVelocity: 8
-  jumpVelocity: 17
-  amoutOfJumps: 1
+  jumpVelocity: 15
+  amoutOfJumps: 2
   downGravityScale: 18
   GravityScale: 6
   groundCheckRadius: 0.3
