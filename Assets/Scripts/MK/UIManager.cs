@@ -30,6 +30,8 @@ public class UIManager : MonoBehaviour
         txtCount.gameObject.SetActive(true);
         Panel_GameOver.SetActive(false);
         Panel_GameClear.SetActive(false);
+        CountDown();
+
     }
 
 
