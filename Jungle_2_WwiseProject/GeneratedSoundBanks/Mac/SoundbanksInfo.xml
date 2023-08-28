@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{A165E6D4-2EEC-05F0-158C-621AC203054E}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{AC2DEC1F-DC9E-6CFB-4395-E091EE05610B}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -32,7 +32,7 @@
 				</File>
 				<File Id="117990375" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TestSong_90bpm.wav</ShortName>
-					<CachePath>SFX/TestSong_90bpm_07FAE998.wem</CachePath>
+					<CachePath>SFX/TestSong_90bpm_3E38BA07.wem</CachePath>
 				</File>
 				<File Id="158859358" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>NATHAN_CHAPMAN_tambourine_one_shot_bonfire.wav</ShortName>
@@ -77,5 +77,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{09BDA76A-F9F4-51B7-7DF1-AC0CB80D17F4}</FileHash>
+	<FileHash>{AD6CB716-E822-7EFA-1547-980A8D173C26}</FileHash>
 </SoundBanksInfo>
