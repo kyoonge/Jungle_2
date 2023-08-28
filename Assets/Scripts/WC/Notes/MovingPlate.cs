@@ -9,16 +9,39 @@ namespace onLand
     public class MovingPlate : MonoBehaviour
     {
         public float moveSpeed = 2f;
+        
+        private bool canMove;
+        
+        private Vector3 originPosition;
+        
         private void Awake()
         {
-            var curPosition = transform.position;
+            originPosition = transform.position;
         }
 
         private void FixedUpdate()
         {
-            var curPosition = transform.position;
-            var newPosition = curPosition + transform.up * -1;
-            transform.position = Vector3.Lerp(curPosition, newPosition, Time.deltaTime * moveSpeed);
+            MoveSheet();
+        }
+
+        private void MoveSheet()
+        {
+            if (canMove)
+            {
+                var curPosition = transform.position;
+                var newPosition = curPosition + transform.up * -1;
+                transform.position = Vector3.Lerp(curPosition, newPosition, Time.deltaTime * moveSpeed);
+            }
+        }
+
+        public void SetIsMoving(bool isMoving)
+        {
+            canMove = isMoving;
+        }
+
+        public void ResetPosition()
+        {
+            transform.position = originPosition;
         }
     }
 
