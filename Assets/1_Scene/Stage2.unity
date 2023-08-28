@@ -202,7 +202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &24670515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -589,11 +589,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8550177949320143435, guid: 25005e865face504da4e53afd7d1e3bf, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8550177949320143435, guid: 25005e865face504da4e53afd7d1e3bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -2.2222223
       objectReference: {fileID: 0}
     - target: {fileID: 8550177949320143435, guid: 25005e865face504da4e53afd7d1e3bf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3355,8 +3355,8 @@ Transform:
   - {fileID: 1400563878}
   - {fileID: 513385326}
   - {fileID: 830893493}
-  - {fileID: 22650606}
   - {fileID: 137687186}
+  - {fileID: 22650606}
   - {fileID: 1606425301}
   - {fileID: 1375405042}
   - {fileID: 1383115376}
@@ -5070,6 +5070,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 949467427, guid: 879e20223b64668468ca08b2becc421a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoLobyScene
+      objectReference: {fileID: 0}
     - target: {fileID: 1687973791, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5205,6 +5209,10 @@ PrefabInstance:
     - target: {fileID: 4722103729148590335, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187960717532216374, guid: 879e20223b64668468ca08b2becc421a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoLobyScene
       objectReference: {fileID: 0}
     - target: {fileID: 8787761027816584033, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: m_SizeDelta.x

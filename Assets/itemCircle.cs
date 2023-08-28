@@ -6,6 +6,7 @@ public class itemCircle : MonoBehaviour
 {
     private GameObject player;
     private Animator animator;
+    private float itemHp;
 
     private void Start()
     {
@@ -20,8 +21,10 @@ public class itemCircle : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            float itemHp = 0.01f;
             this.gameObject.SetActive(false);
             AkSoundEngine.PostEvent("ItemSound", gameObject);
+            UIManager.instance.panelIngameController.increaseHP(itemHp);
         }
     }
 

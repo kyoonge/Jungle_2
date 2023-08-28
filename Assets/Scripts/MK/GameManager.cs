@@ -75,6 +75,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void LobyScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR
