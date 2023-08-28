@@ -29,6 +29,13 @@ public class Note : MonoBehaviour
         AkSoundEngine.PostEvent("NoteSound", gameObject);
     }
     
+    public void OnMissHit()
+    {
+        isHit = true;
+        spriteRenderer.color = Color.red;
+        //AkSoundEngine.PostEvent("NoteSound", gameObject);
+    }
+    
     public bool IsHit()
     {
         return isHit;

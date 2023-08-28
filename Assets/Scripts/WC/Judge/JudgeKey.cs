@@ -5,19 +5,24 @@ using UnityEngine;
 
 public class JudgeKey : MonoBehaviour
 {
+    private StaticsManager staticsManager;
+    
     private bool isHit;
+    
     private Note hitNote;
+    
     public GameObject perfect, good;
     [SerializeField] private float perfectValue = 0.01f; 
     [SerializeField] private float goodValue = 0.01f;
     private SpriteRenderer perfectSprite, goodSprite, effectSpriteRenderer;
-
-    private void Start()
+    
+    private void Awake()
     {
+        staticsManager = GameObject.Find("StaticsManager").GetComponent<StaticsManager>();
         perfectSprite = perfect.GetComponent<SpriteRenderer>();
         goodSprite = good.GetComponent<SpriteRenderer>();
+        isHit = false;
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("note"))
@@ -32,6 +37,13 @@ public class JudgeKey : MonoBehaviour
         if (other.CompareTag("note"))
         {
             isHit = false;
+
+            if (!hitNote.IsHit())
+            {
+                hitNote.OnMissHit();
+                staticsManager.AddMiss();
+            }
+            
             hitNote = null;
         }
     }
@@ -46,6 +58,7 @@ public class JudgeKey : MonoBehaviour
                 effectSpriteRenderer = perfectSprite;
                 StartCoroutine(ShowEffect(perfect));
                 UIManager.instance.panelIngameController.increaseHP(perfectValue);
+                staticsManager.AddPerfect();
             }
         }
     }
@@ -60,6 +73,7 @@ public class JudgeKey : MonoBehaviour
                 effectSpriteRenderer = goodSprite;
                 StartCoroutine(ShowEffect(good));
                 UIManager.instance.panelIngameController.increaseHP(goodValue);
+                staticsManager.AddNormal();
             }
         }
     }
