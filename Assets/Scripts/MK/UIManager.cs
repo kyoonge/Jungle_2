@@ -11,7 +11,8 @@ public class UIManager : MonoBehaviour
     public PanelInGameController panelIngameController;
     public TextMeshProUGUI txtCount;
     public GameObject Panel_GameOver, Panel_GameClear;
-    
+    public GameObject Panel_Statics;
+    private StaticsUI staticsUI;
 
     // Start is called before the first frame update
     public void Init()
@@ -27,11 +28,14 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        //panelIngameController = transform.GetComponent<PanelInGameController>();       
+        //panelIngameController = transform.GetComponent<PanelInGameController>();
+        staticsUI = Panel_Statics.GetComponent<StaticsUI>();
+        
         panelIngameController.gameObject.SetActive(false);
         txtCount.gameObject.SetActive(true);
         Panel_GameOver.SetActive(false);
         Panel_GameClear.SetActive(false);
+        Panel_Statics.SetActive(false);
         CountDown();
 
     }
@@ -94,6 +98,9 @@ public class UIManager : MonoBehaviour
         panelIngameController.gameObject.SetActive(false);
         AkSoundEngine.PostEvent("FadeOut", gameObject);
         Panel_GameOver.gameObject.SetActive(true);
+        
+        Panel_Statics.gameObject.SetActive(true);
+        staticsUI.InitStaticsUI();
     }
 
     public void GameClear()
@@ -101,6 +108,9 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0;
         panelIngameController.gameObject.SetActive(false);
         Panel_GameClear.gameObject.SetActive(true);
+        
+        Panel_Statics.gameObject.SetActive(true);
+        staticsUI.InitStaticsUI();
     }
     public void ReStartScene()
     {

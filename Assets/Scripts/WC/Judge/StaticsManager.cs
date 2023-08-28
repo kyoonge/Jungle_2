@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,16 @@ public class StaticsManager : MonoBehaviour
     public int ComboCounter { get; private set; }
     public int MaxCombo { get; private set; }
     
+    void Awake()
+    {
+        Reset();
+    }
+
+    private void Start()
+    {
+        Reset();
+    }
+
     public void Reset()
     {
         PerfectCounter = 0;
