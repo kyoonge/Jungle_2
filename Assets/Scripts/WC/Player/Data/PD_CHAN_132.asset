@@ -19,7 +19,7 @@ MonoBehaviour:
   amoutOfJumps: 1
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 1
-  downGravityScale: 27
+  downGravityScale: 30
   groundPoundVelocity: -30
   isDashOnApex: 0
   dashInputHoldTime: 0.2

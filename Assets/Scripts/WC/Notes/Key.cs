@@ -20,9 +20,6 @@ namespace onLand
         [SerializeField]
         private GameObject effectKey;
         private SpriteRenderer effectSpriteRenderer;
-        
-        [SerializeField]
-        private AudioSource keySound;
 
         private void Awake()
         {
