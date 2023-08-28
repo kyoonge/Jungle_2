@@ -7,9 +7,10 @@ public class ItemDetector : MonoBehaviour
     public GameObject item;
 
     [Header("FrontScan")]
-    public Vector2 detectionBoxSize = new Vector2(20f, 5f);
+    public Vector3 detectionBoxSize = new Vector3(20f, 5f,1f);
     public LayerMask detectionLayer;
     public Vector3 DetectDirection;
+    public float destroyDelay = 2.3f;
 
     private void Update()
     {
@@ -19,7 +20,7 @@ public class ItemDetector : MonoBehaviour
     private bool isDetectObjectsAhead()
     {
         // 플레이어 바로 앞의 박스 캐스트 수행
-        Vector2 detectionOrigin = transform.position + DetectDirection * detectionBoxSize.x * 0.5f; // 박스 캐스트 시작 위치 계산
+        Vector3 detectionOrigin = transform.position + DetectDirection * detectionBoxSize.x * 0.5f; // 박스 캐스트 시작 위치 계산
         Collider[] hitColliders = Physics.OverlapBox(detectionOrigin, detectionBoxSize);
         //Debug.Log("DetectObject ");
 
@@ -29,10 +30,11 @@ public class ItemDetector : MonoBehaviour
             if (collider.CompareTag("item"))
             {
                 collider.gameObject.SetActive(false);
-                GameObject _item = Instantiate(item, collider.transform.position, Quaternion.identity);
+                Vector3 colliderPos = collider.transform.position;
+                GameObject _item = Instantiate(item, new Vector3(colliderPos.x, colliderPos.y, transform.position.z), Quaternion.identity);
                 //collider.gameObject.transform.position
-                Debug.Log("item: " + collider.gameObject.name);
-                StartCoroutine( DeleteObjectAfterDelay(1f, _item));
+                Debug.Log("item: " + collider.gameObject.name + ", "+collider.transform.position);
+                StartCoroutine( DeleteObjectAfterDelay(destroyDelay, _item));
                 return true;
             }
         }
