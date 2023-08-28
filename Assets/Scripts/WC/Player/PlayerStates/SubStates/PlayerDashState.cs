@@ -6,7 +6,7 @@ namespace onLand
 {
     public class PlayerDashState : PlayerAbilityState
     {
-        public bool CanDash { get; private set; }
+        private int amountOfDashesLeft;
 
         private bool isDashOnApex;
 
@@ -17,17 +17,18 @@ namespace onLand
 
         public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
+            amountOfDashesLeft = playerData.amountOfDashes;
         }
         public override void Enter()
         {
             base.Enter();
 
-            CanDash = false;
             player.InputHandler.UseDashInput();
 
             isDashOnApex = playerData.isDashOnApex;
 
             dashDirection = Vector2.right * player.FacingDirection;
+            amountOfDashesLeft--;
 
             //slow
             //Time.timeScale = playerData.holdTimeScale;
@@ -65,7 +66,7 @@ namespace onLand
             }
         }
 
-        public bool CheckIfCanDash()
+        public bool CheckDashCool()
         {
             if (isDashOnApex)
             {
@@ -74,11 +75,22 @@ namespace onLand
                     return false;
                 }
             }
-            return CanDash && Time.time >= lastDashTime + playerData.dashCooldown;
+            return Time.time >= lastDashTime + playerData.dashCooldown;
         }
-
-        public void ResetCanDash() => CanDash = true;
-
+        
+        public bool CanDash()
+        {
+            if (amountOfDashesLeft > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void ResetAmountOfDashesLeft() => amountOfDashesLeft = playerData.amountOfDashes;
+        public void DecreaseAmountOfDashesLeft() => amountOfDashesLeft--;
 
     }
 

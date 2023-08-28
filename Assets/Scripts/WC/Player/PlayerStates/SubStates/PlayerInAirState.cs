@@ -56,14 +56,15 @@ namespace onLand
             base.LogicUpdate();
 
             CheckCoyoteTime();
-            CheckJumpMultiplier();
+            
             xInput = player.InputHandler.NormInputX;
             jumpInput = player.InputHandler.JumpInput;
             jumpInputStop = player.InputHandler.JumpInputStop;
             groundPoundInput = player.InputHandler.GroundPoundInput;
             dashInput = player.InputHandler.DashInput;
 
-            isGrounded = player.CheckIfGrounded();
+            CheckJumpMultiplier();
+            //isGrounded = player.CheckIfGrounded();
 
             if (isGrounded && player.CurrentVelocity.y < 0.01f)
             {
@@ -79,7 +80,7 @@ namespace onLand
             {
                 stateMachine.ChangeState(player.GroundPoundState);
             }
-            else if (dashInput && player.DashState.CheckIfCanDash())
+            else if (dashInput && player.DashState.CanDash() && player.DashState.CheckDashCool())
             {
                 stateMachine.ChangeState(player.DashState);
             }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace onLand
 {
@@ -10,22 +11,31 @@ namespace onLand
     {
         private Color originColor;
         private SpriteRenderer spriteRenderer;
+        
         [SerializeField]
         private GameObject effectKey;
         private SpriteRenderer effectSpriteRenderer;
+        
+        [SerializeField]
+        private AudioSource keySound;
+
         
         void Start()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
             originColor = spriteRenderer.color;
             effectSpriteRenderer = effectKey.GetComponent<SpriteRenderer>();
-            effectKey.SetActive(false);
-            
+            //effectKey.SetActive(false);
+            Color c = effectSpriteRenderer.material.color;
+            c.a = 0;
+            effectSpriteRenderer.material.color = c;
         }
         private void OnCollisionEnter2D(Collision2D other)
         {   
             if (other.gameObject.CompareTag("Player"))
             {
+                keySound.Play();
+                RumbleManager.instance.RumblePulse(1f, 1f, 0.1f);
                 GetComponent<SpriteRenderer>().color = Color.red;
                 StartCoroutine(EnterKeyEffect());
             }
@@ -43,7 +53,7 @@ namespace onLand
         public IEnumerator EnterKeyEffect()
         {
             StopCoroutine(ExitKeyEffect());
-            effectKey.SetActive(true);
+            //effectKey.SetActive(true);
             for (float f = 0f; f < 1f; f += 0.1f)
             {
                 Color c = effectSpriteRenderer.material.color;
@@ -62,7 +72,7 @@ namespace onLand
                 effectSpriteRenderer.material.color = c;
                 yield return null;
             }
-            effectKey.SetActive(false);
+            //effectKey.SetActive(false);
         }
     }
 }

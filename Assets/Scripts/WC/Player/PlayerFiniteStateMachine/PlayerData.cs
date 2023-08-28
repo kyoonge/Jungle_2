@@ -27,6 +27,7 @@ namespace onLand
         [Header("Dash State")] 
         public bool isDashOnApex = false;
         public float dashInputHoldTime = 0.2f;
+        public int amountOfDashes = 1;
         public float dashCooldown = 0.5f;
         public float dashTime = 0.2f; // 대시 길이
         public float dashVelocity = 30f;

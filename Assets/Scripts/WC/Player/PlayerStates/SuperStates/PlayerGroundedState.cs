@@ -28,7 +28,7 @@ namespace onLand
             base.Enter();
     
             player.JumpState.ResetAmountOfJumpsLeft();
-            player.DashState.ResetCanDash();
+            player.DashState.ResetAmountOfDashesLeft();
         }
     
         public override void Exit()
@@ -48,7 +48,7 @@ namespace onLand
             {
                 stateMachine.ChangeState(player.JumpState);
             }
-            else if (dashInput && player.DashState.CheckIfCanDash())
+            else if (dashInput && player.DashState.CanDash() && player.DashState.CheckDashCool())
             {
                 stateMachine.ChangeState(player.DashState);
             }

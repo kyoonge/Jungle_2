@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: PD_CHAN
   m_EditorClassIdentifier: 
   gravityScale: 5
-  movementVelocity: 6
-  jumpInputHoldTime: 0.2
+  movementVelocity: 6.8
+  jumpInputHoldTime: 0.1
   jumpVelocity: 21
   amoutOfJumps: 1
+  coyoteTime: 0.2
+  variableJumpHeightMultiplier: 1
+  downGravityScale: 18
   groundPoundVelocity: -30
+  isDashOnApex: 0
   dashInputHoldTime: 0.2
   dashCooldown: 0
   dashTime: 0.1
@@ -28,6 +32,4 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTime: 0.2
-  variableJumpHeightMultiplier: 1
-  downGravityScale: 18
+  inAirVelocity: 6
