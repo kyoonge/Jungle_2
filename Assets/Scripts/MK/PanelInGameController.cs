@@ -27,6 +27,11 @@ public class PanelInGameController : MonoBehaviour
     {
         hpBar.value += value; 
     }
+    
+    public void decreaseHP(float value)
+    {
+        hpBar.value -= value; 
+    }
 
     private IEnumerator DecreaseHPBarCoroutine()
     {

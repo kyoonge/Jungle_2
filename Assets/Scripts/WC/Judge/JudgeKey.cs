@@ -11,16 +11,18 @@ public class JudgeKey : MonoBehaviour
     
     private Note hitNote;
     
-    public GameObject perfect, good;
+    public GameObject perfect, good, miss;
     [SerializeField] private float perfectValue = 0.01f; 
     [SerializeField] private float goodValue = 0.01f;
-    private SpriteRenderer perfectSprite, goodSprite, effectSpriteRenderer;
+    [SerializeField] private float missValue = 0.01f;
+    private SpriteRenderer perfectSprite, goodSprite, missSprite, effectSpriteRenderer;
     
     private void Awake()
     {
         staticsManager = GameObject.Find("StaticsManager").GetComponent<StaticsManager>();
         perfectSprite = perfect.GetComponent<SpriteRenderer>();
         goodSprite = good.GetComponent<SpriteRenderer>();
+        missSprite = miss.GetComponent<SpriteRenderer>();
         isHit = false;
     }
     private void OnTriggerEnter(Collider other)
@@ -41,6 +43,9 @@ public class JudgeKey : MonoBehaviour
             if (!hitNote.IsHit())
             {
                 hitNote.OnMissHit();
+                effectSpriteRenderer = missSprite;
+                StartCoroutine(ShowEffect(miss));
+                UIManager.instance.panelIngameController.decreaseHP(missValue);
                 staticsManager.AddMiss();
             }
             
