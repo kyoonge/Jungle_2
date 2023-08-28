@@ -66,17 +66,26 @@ public class UIManager : MonoBehaviour
         //start HP system
         panelIngameController.gameObject.SetActive(true);
         panelIngameController.startHP();
+        StageMusic();
+        
+    }
 
-        if(SceneManager.GetActiveScene().buildIndex >= 3 && SceneManager.GetActiveScene().buildIndex <= 5)
+    public void StageMusic()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= 3 && SceneManager.GetActiveScene().buildIndex <= 5)
         {
             AkSoundEngine.PostEvent("MainSong", gameObject);
         }
-        if(SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             AkSoundEngine.PostEvent("TestSong", gameObject);
         }
-        
+        else
+        {
+            //
+        }
     }
+
     public void GameOver()
     {
         Time.timeScale = 0;

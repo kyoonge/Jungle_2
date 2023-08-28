@@ -9,9 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { Init(); return _instance; } }
     //private readonly UIManager _ui = new UIManager();
     //public static UIManager UI => _instance._ui;
-
     public bool isRestart;
-    public int level; // Easy=0, Hard=1
 
     static void Init()
     {
@@ -35,8 +33,6 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <= 5)
         {
             UIManager.instance.CountDown();
-            //UI.CountDown();
-            //CountDown();
         }
         else if(SceneManager.GetActiveScene().buildIndex == 1)
         {
