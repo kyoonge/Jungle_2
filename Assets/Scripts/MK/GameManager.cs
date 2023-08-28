@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         }
 
         //Stage씬은 3초 카운트다운으로 시작
-        if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <= 4)
+        if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <= 5)
         {
             UIManager.instance.CountDown();
             //UI.CountDown();

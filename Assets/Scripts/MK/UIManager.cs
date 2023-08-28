@@ -95,10 +95,7 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.ReloadScene();
     }
-    public void StartLobyScene()
-    {
-        //GameManager.Instance.StartGame();
-    }
+
     public void ExitGame()
     {
         GameManager.Instance.ExitGame();
