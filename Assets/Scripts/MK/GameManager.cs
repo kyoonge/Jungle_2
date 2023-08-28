@@ -9,9 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { Init(); return _instance; } }
     //private readonly UIManager _ui = new UIManager();
     //public static UIManager UI => _instance._ui;
-
     public bool isRestart;
-    public int level; // Easy=0, Hard=1
 
     static void Init()
     {
@@ -32,11 +30,9 @@ public class GameManager : MonoBehaviour
         }
 
         //Stage씬은 3초 카운트다운으로 시작
-        if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <= 4)
+        if (SceneManager.GetActiveScene().buildIndex >= 2 && SceneManager.GetActiveScene().buildIndex <= 5)
         {
             UIManager.instance.CountDown();
-            //UI.CountDown();
-            //CountDown();
         }
         else if(SceneManager.GetActiveScene().buildIndex == 1)
         {
@@ -67,26 +63,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("Restart");
             ReloadScene();
         }
-    }
-
-    public void StartGame()
-    {
-        SceneManager.LoadScene("StageLoby");
-    }
-
-    public void TutorialStage()
-    {
-        SceneManager.LoadScene("Stage");
-    }
-
-    public void StartStageEasy()
-    {
-        SceneManager.LoadScene("Stage2");
-    }
-
-    public void StartStageHard()
-    {
-        SceneManager.LoadScene("Stage3");
     }
 
     public void LoadScene(int SceneIndex)

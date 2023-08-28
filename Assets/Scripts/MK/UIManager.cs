@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class UIManager : MonoBehaviour
     public PanelInGameController panelIngameController;
     public TextMeshProUGUI txtCount;
     public GameObject Panel_GameOver, Panel_GameClear;
+    
 
     // Start is called before the first frame update
     public void Init()
@@ -66,8 +68,26 @@ public class UIManager : MonoBehaviour
         //start HP system
         panelIngameController.gameObject.SetActive(true);
         panelIngameController.startHP();
-        AkSoundEngine.PostEvent("MainSong", gameObject);
+        StageMusic();
+        
     }
+
+    public void StageMusic()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= 3 && SceneManager.GetActiveScene().buildIndex <= 5)
+        {
+            AkSoundEngine.PostEvent("MainSong", gameObject);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            AkSoundEngine.PostEvent("TestSong", gameObject);
+        }
+        else
+        {
+            //
+        }
+    }
+
     public void GameOver()
     {
         Time.timeScale = 0;
@@ -86,10 +106,7 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.ReloadScene();
     }
-    public void StartLobyScene()
-    {
-        GameManager.Instance.StartGame();
-    }
+
     public void ExitGame()
     {
         GameManager.Instance.ExitGame();
