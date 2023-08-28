@@ -199,6 +199,17 @@
                 },
                 {
                     "name": "",
+                    "id": "29534777-23ba-4081-8a79-a77056db0cd5",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GroundPound",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "cbc42097-a6b9-40e1-a9d4-4aee57ccb7e6",
                     "path": "<Keyboard>/shift",
                     "interactions": "",
