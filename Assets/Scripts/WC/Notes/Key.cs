@@ -46,7 +46,7 @@ namespace onLand
             if (other.gameObject.CompareTag("Player"))
             {
                 //keySound.Play();
-                RumbleManager.instance.RumblePulse(1f, 1f, 0.1f);
+                RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.1f);
                 GetComponent<SpriteRenderer>().color = Color.red;
                 StartCoroutine(EnterKeyEffect());
             }

@@ -20,6 +20,7 @@ public class Note : MonoBehaviour
         isHit = true;
         spriteRenderer.color = Color.green;
         AkSoundEngine.PostEvent("NoteSound", gameObject);
+        RumbleManager.instance.RumblePulse(1f, 1f, 0.1f);
     }
     
     public void OnNormalHit()
