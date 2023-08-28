@@ -19,12 +19,14 @@ public class Note : MonoBehaviour
     {
         isHit = true;
         spriteRenderer.color = Color.green;
+        AkSoundEngine.PostEvent("NoteSound", gameObject);
     }
     
     public void OnNormalHit()
     {
         isHit = true;
         spriteRenderer.color = Color.yellow;
+        AkSoundEngine.PostEvent("NoteSound", gameObject);
     }
     
     public bool IsHit()

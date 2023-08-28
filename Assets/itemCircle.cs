@@ -21,6 +21,7 @@ public class itemCircle : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             this.gameObject.SetActive(false);
+            AkSoundEngine.PostEvent("ItemSound", gameObject);
         }
     }
 
