@@ -17,7 +17,7 @@ public class ChangeColor : MonoBehaviour
     {   
         if (other.gameObject.CompareTag("Player"))
         {
-            GetComponent<SpriteRenderer>().color = Color.red;
+            GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.75f, 0.75f, 0.5f);
         }
     }
     private void OnCollisionExit2D(Collision2D other)

@@ -44,7 +44,7 @@ namespace onLand
             {
                 //keySound.Play();
                 RumbleManager.instance.RumblePulse(0.5f, 0.5f, 0.1f);
-                GetComponent<SpriteRenderer>().color = Color.red;
+                GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.75f, 0.75f,0.5f); ;
                 StartCoroutine(EnterKeyEffect());
             }
         }
