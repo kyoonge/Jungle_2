@@ -3922,6 +3922,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9195538617427882168, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538617427882168, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538617874767766, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538617874767766, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618124748106, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618124748106, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618166660356, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618166660356, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618591479670, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618591479670, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618637739200, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618637739200, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618881866526, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: missValue
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195538618881866526, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
+      propertyPath: perfectValue
+      value: 0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 362cbc2ecefb6534fa1596e4d06c5de9, type: 3}
 --- !u!1001 &1301128677
@@ -5093,6 +5149,10 @@ PrefabInstance:
     - target: {fileID: 248947640251076646, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281687638960331445, guid: 879e20223b64668468ca08b2becc421a, type: 3}
+      propertyPath: decreaseHpDelay
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4722103729148590306, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: m_Name
