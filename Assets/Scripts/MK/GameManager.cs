@@ -99,11 +99,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    private void GameOver()
-    {
-        AkSoundEngine.PostEvent("GameOver", gameObject);
-    }
-
     public void ExitGame()
     {
 #if UNITY_EDITOR

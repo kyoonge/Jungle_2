@@ -8,8 +8,7 @@ public class Metronome : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //주석 해제 시 메트로놈 발생
-            //AkSoundEngine.PostEvent("Count", gameObject);
+            AkSoundEngine.PostEvent("Count", gameObject);
             Destroy(gameObject);
         }
     }

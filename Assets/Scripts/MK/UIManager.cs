@@ -25,12 +25,11 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        //panelIngameController = transform.GetComponent<PanelInGameController>();
+        //panelIngameController = transform.GetComponent<PanelInGameController>();       
         panelIngameController.gameObject.SetActive(false);
         txtCount.gameObject.SetActive(true);
         Panel_GameOver.SetActive(false);
         Panel_GameClear.SetActive(false);
-
     }
 
 
@@ -65,11 +64,13 @@ public class UIManager : MonoBehaviour
         //start HP system
         panelIngameController.gameObject.SetActive(true);
         panelIngameController.startHP();
+        AkSoundEngine.PostEvent("MainSong", gameObject);
     }
     public void GameOver()
     {
         Time.timeScale = 0;
         panelIngameController.gameObject.SetActive(false);
+        AkSoundEngine.PostEvent("FadeOut", gameObject);
         Panel_GameOver.gameObject.SetActive(true);
     }
 
