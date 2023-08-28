@@ -12,12 +12,7 @@ namespace onLand
         
         private bool canMove;
         
-        private Vector3 originPosition;
-        
-        private void Awake()
-        {
-            originPosition = transform.position;
-        }
+        public Vector3 originPosition;
 
         private void FixedUpdate()
         {

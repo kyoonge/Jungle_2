@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6707676277268040725}
   - component: {fileID: 2699192532069241458}
   - component: {fileID: -4459916538064702892}
-  - component: {fileID: 1186697681253307700}
   m_Layer: 0
   m_Name: HalfNote
   m_TagString: note
@@ -112,15 +111,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1186697681253307700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6903611417246333608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f91265fdf7bc7304cb03af584c48f2fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
