@@ -69,26 +69,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene("StageLoby");
-    }
-
-    public void TutorialStage()
-    {
-        SceneManager.LoadScene("Stage");
-    }
-
-    public void StartStageEasy()
-    {
-        SceneManager.LoadScene("Stage2");
-    }
-
-    public void StartStageHard()
-    {
-        SceneManager.LoadScene("Stage3");
-    }
-
     public void LoadScene(int SceneIndex)
     {
         SceneManager.LoadScene(SceneIndex);
