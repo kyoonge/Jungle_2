@@ -17,9 +17,6 @@
 				<Event Name="TestSong" ID="{89009415-43C9-44C0-9784-2EC189CA910A}">
 					<ChildrenList>
 						<Action Name="" ID="{E74A68F8-10EA-4C12-8C6F-0802B22CBA79}" ShortID="1068663666">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="5"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TestSong_90bpm" ID="{5F4C841F-6565-4957-81B6-89E37E2EF4CF}" WorkUnitID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}"/>
