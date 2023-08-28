@@ -3845,7 +3845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281687638960331445, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: decreaseHpAmount
-      value: 0.03
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3061427592124255047, guid: 879e20223b64668468ca08b2becc421a, type: 3}
       propertyPath: m_fontAsset
