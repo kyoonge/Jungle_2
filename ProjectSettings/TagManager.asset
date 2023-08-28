@@ -6,6 +6,7 @@ TagManager:
   tags:
   - note
   - item
+  - key
   layers:
   - Default
   - TransparentFX

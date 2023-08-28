@@ -9,6 +9,11 @@ namespace onLand
 {
     public class Key : MonoBehaviour
     {
+        [SerializeField]
+        private GameObject judgeKeyGO;
+
+        public JudgeKey judgeKey;
+        
         private Color originColor;
         private SpriteRenderer spriteRenderer;
         
@@ -19,7 +24,12 @@ namespace onLand
         [SerializeField]
         private AudioSource keySound;
 
-        
+        private void Awake()
+        {
+            judgeKey = judgeKeyGO.GetComponent<JudgeKey>();
+        }
+
+
         void Start()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -30,6 +40,7 @@ namespace onLand
             c.a = 0;
             effectSpriteRenderer.material.color = c;
         }
+        
         private void OnCollisionEnter2D(Collision2D other)
         {   
             if (other.gameObject.CompareTag("Player"))
@@ -40,6 +51,7 @@ namespace onLand
                 StartCoroutine(EnterKeyEffect());
             }
         }
+        
         private void OnCollisionExit2D(Collision2D other)
         {   
             if (other.gameObject.CompareTag("Player"))
