@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{BB3C4F0B-8188-CE9D-B25A-D4E282B8268F}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{A165E6D4-2EEC-05F0-158C-621AC203054E}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -32,7 +32,7 @@
 				</File>
 				<File Id="117990375" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TestSong_90bpm.wav</ShortName>
-					<CachePath>SFX/TestSong_90bpm_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/TestSong_90bpm_07FAE998.wem</CachePath>
 				</File>
 				<File Id="158859358" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>NATHAN_CHAPMAN_tambourine_one_shot_bonfire.wav</ShortName>
@@ -53,13 +53,13 @@
 						<MediaRef Id="273663118"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4158285989" Name="GameOver" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3903560121" Name="FadeOut" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2978212717" Name="ItemSound" DurationType="OneShot" DurationMin="0.8086848" DurationMax="0.8086848">
 					<MediaRefs>
 						<MediaRef Id="158859358"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="89.090904" DurationMax="89.090904">
+				<Event Id="3863200005" Name="MainSong" DurationType="OneShot" DurationMin="89.09097" DurationMax="89.09097">
 					<MediaRefs>
 						<MediaRef Id="686272057"/>
 					</MediaRefs>
@@ -69,7 +69,7 @@
 						<MediaRef Id="76875162"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="118783190" Name="TestSong" DurationType="Infinite">
+				<Event Id="118783190" Name="TestSong" DurationType="OneShot" DurationMin="36.999825" DurationMax="36.999825">
 					<MediaRefs>
 						<MediaRef Id="117990375"/>
 					</MediaRefs>
@@ -77,5 +77,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{23895A4E-0B7E-21CA-34FE-4661D6EDA047}</FileHash>
+	<FileHash>{9EF42CB6-641B-FE39-1EAD-61280F3F594A}</FileHash>
 </SoundBanksInfo>
