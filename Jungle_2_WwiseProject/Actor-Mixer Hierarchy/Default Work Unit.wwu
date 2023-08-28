@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{48891350-3FD1-4BA1-BE63-E496E6FF8CAE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="CountDown" ID="{084E21BF-3449-41DD-852F-31C54EB1FC5F}" ShortID="588698027">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F322D9CA-9C66-40B5-8AE0-5EF4ABCF5150}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F7737D6-82D4-49C1-BF35-07EAD6349EA6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BNDLZ_perc_one_shot_clock_01" ID="{9C9BA591-BF67-43CC-8FC7-D15E92175110}">
+							<Language>SFX</Language>
+							<AudioFile>BNDLZ_perc_one_shot_clock_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="273663118"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BNDLZ_perc_one_shot_clock_01" ID="{9C9BA591-BF67-43CC-8FC7-D15E92175110}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="NoteSound" ID="{980A9247-651F-4841-B1ED-5C4DDF17FCD8}" ShortID="270617134">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F322D9CA-9C66-40B5-8AE0-5EF4ABCF5150}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F7737D6-82D4-49C1-BF35-07EAD6349EA6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sphinx_Tambourine" ID="{561776DF-0BE0-46AE-AFC4-E88A4A721F4F}">
+							<Language>SFX</Language>
+							<AudioFile>Sphinx_Tambourine.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="76875162"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sphinx_Tambourine" ID="{561776DF-0BE0-46AE-AFC4-E88A4A721F4F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ItemSound" ID="{0CBE6C9F-ABA7-4961-808C-EDC60E02A170}" ShortID="222059772">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F322D9CA-9C66-40B5-8AE0-5EF4ABCF5150}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F7737D6-82D4-49C1-BF35-07EAD6349EA6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="NATHAN_CHAPMAN_tambourine_one_shot_bonfire" ID="{3E5C0632-429C-4E4A-A63C-EF9A39157AEE}">
+							<Language>SFX</Language>
+							<AudioFile>NATHAN_CHAPMAN_tambourine_one_shot_bonfire.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="158859358"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="NATHAN_CHAPMAN_tambourine_one_shot_bonfire" ID="{3E5C0632-429C-4E4A-A63C-EF9A39157AEE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TestSong_90bpm" ID="{5F4C841F-6565-4957-81B6-89E37E2EF4CF}" ShortID="800570406">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+						<Property Name="LoopCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F322D9CA-9C66-40B5-8AE0-5EF4ABCF5150}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F7737D6-82D4-49C1-BF35-07EAD6349EA6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TestSong_90bpm" ID="{AC7B661D-4CAF-449E-8A12-71D8798281E8}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="3.0000579018071"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>TestSong_90bpm.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="117990375"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TestSong_90bpm" ID="{AC7B661D-4CAF-449E-8A12-71D8798281E8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
