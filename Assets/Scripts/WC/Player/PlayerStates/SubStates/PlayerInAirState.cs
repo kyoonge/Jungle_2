@@ -44,6 +44,10 @@ namespace onLand
         public override void Enter()
         {
             base.Enter();
+            player.key = null;
+            player.MoveState.key = null;
+            player.LandState.key = null;
+            player.IdleState.key = null;
         }
 
         public override void Exit()

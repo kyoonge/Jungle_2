@@ -33,12 +33,23 @@ namespace onLand
                 player.SetVelocityY(playerData.groundPoundVelocity);
                 
                 //player.SetVelocity(playerData.dashVelocity, dashDirection);
-
+                
                 if(player.CheckIfGrounded())
                 {
                     player.RB.drag = 0f;
                     isAbilityDone = true;
                 }
+            }
+        }
+        
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+            
+            if(player.CheckIfGrounded())
+            {
+                player.RB.drag = 0f;
+                isAbilityDone = true;
             }
         }
 

@@ -76,6 +76,22 @@ public class TestManager : MonoBehaviour
         movingPlate.SetIsMoving(false);
         
         movingPlate.ResetPosition();
+        for (int i = 0; i < movingPlate.transform.childCount; i++)
+        {
+            var measure = movingPlate.transform.GetChild(i);
+            for (int j = 0; j < measure.childCount; j++)
+            {
+                var bar = measure.GetChild(j);
+                for (int k = 0; k < bar.childCount; k++)
+                {
+                    var note = bar.GetChild(k).GetComponent<Note>();
+                    if (note)
+                    {
+                        note.ResetNote();    
+                    }
+                }
+            }
+        }
         // CountDown
         
         musicSource.Play();

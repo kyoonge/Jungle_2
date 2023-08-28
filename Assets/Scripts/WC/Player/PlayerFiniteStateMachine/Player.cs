@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace onLand
@@ -35,6 +37,8 @@ namespace onLand
         private Vector2 workspace;
         public Vector2 CurrentVelocity { get; private set; }
         public int FacingDirection { get; private set; }
+
+        public GameObject key;
         #endregion
 
         #region Unity Callback Functions
@@ -124,6 +128,28 @@ namespace onLand
             transform.Rotate(0.0f, 180.0f, 0.0f);
         }
         #endregion
+        
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("key"))
+            {
+                key = other.gameObject;
+                MoveState.key = other.gameObject.GetComponent<Key>();
+                IdleState.key = other.gameObject.GetComponent<Key>();
+                LandState.key = other.gameObject.GetComponent<Key>();
+            }
+        }
+
+        /*private void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("key"))
+            {
+                key = null;
+                MoveState.key = null;
+                IdleState.key = null;
+                LandState.key = null;
+            }
+        }*/
     }
 }
 

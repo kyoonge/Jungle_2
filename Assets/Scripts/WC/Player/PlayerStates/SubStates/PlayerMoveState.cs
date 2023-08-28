@@ -32,7 +32,9 @@ namespace onLand
             player.CheckIfShouldFlip(xInput);
 
             player.SetVelocityX(playerData.movementVelocity * xInput);
-
+            
+            key.judgeKey.StayJudge();
+            
             if (!isExitingState)
             {
                 if (xInput == 0)

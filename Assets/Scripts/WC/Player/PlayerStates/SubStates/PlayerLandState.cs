@@ -18,6 +18,10 @@ namespace onLand
         public override void Enter()
         {
             base.Enter();
+            if (key)
+            {
+                key.judgeKey.LandJudge();
+            }
         }
 
         public override void Exit()
