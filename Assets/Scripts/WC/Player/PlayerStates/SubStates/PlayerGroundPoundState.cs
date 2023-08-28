@@ -36,6 +36,7 @@ namespace onLand
                 
                 if(player.CheckIfGrounded())
                 {
+                    key.judgeKey.LandJudge();
                     player.RB.drag = 0f;
                     isAbilityDone = true;
                 }
