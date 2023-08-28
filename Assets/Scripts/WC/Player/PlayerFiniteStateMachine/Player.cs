@@ -137,6 +137,7 @@ namespace onLand
                 MoveState.key = other.gameObject.GetComponent<Key>();
                 IdleState.key = other.gameObject.GetComponent<Key>();
                 LandState.key = other.gameObject.GetComponent<Key>();
+                GroundPoundState.key = other.gameObject.GetComponent<Key>();
             }
         }
 

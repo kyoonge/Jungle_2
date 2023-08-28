@@ -9,6 +9,7 @@ namespace onLand
         protected Player player;
         protected PlayerStateMachine stateMachine;
         protected PlayerData playerData;
+        public Key key;
 
         protected bool isAnimationFinished;
         protected bool isExitingState;
