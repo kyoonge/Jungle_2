@@ -6,7 +6,10 @@ namespace onLand
 {
     public class PlayerGroundedState : PlayerState
     {
+        public Key key;
+        
         protected int xInput;
+        
         private bool jumpInput;
         private bool groundPoundInput;
         private bool dashInput;

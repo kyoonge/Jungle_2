@@ -6,13 +6,13 @@ using UnityEngine;
 public class JudgeKey : MonoBehaviour
 {
     private bool isHit;
-    private GameObject hitNote;
+    private Note hitNote;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("note"))
         {
             isHit = true;
-            hitNote = other.gameObject;
+            hitNote = other.GetComponent<Note>();
         }
     }
 
@@ -29,10 +29,20 @@ public class JudgeKey : MonoBehaviour
     {
         if (isHit)
         {
-            var noteSR = hitNote.GetComponent<SpriteRenderer>();
-            if (noteSR != null)
+            if (hitNote && !hitNote.IsHit())
             {
-                noteSR.color = Color.green;
+                hitNote.OnPerfectHit();
+            }
+        }
+    }
+
+    public void StayJudge()
+    {
+        if (isHit)
+        {
+            if (hitNote && !hitNote.IsHit())
+            {
+                hitNote.OnNormalHit();
             }
         }
     }

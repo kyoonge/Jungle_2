@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace onLand
@@ -133,18 +134,22 @@ namespace onLand
             if (other.gameObject.CompareTag("key"))
             {
                 key = other.gameObject;
-                LandState.key = other.gameObject;
+                MoveState.key = other.gameObject.GetComponent<Key>();
+                IdleState.key = other.gameObject.GetComponent<Key>();
+                LandState.key = other.gameObject.GetComponent<Key>();
             }
         }
 
-        private void OnCollisionExit2D(Collision2D other)
+        /*private void OnCollisionExit2D(Collision2D other)
         {
             if (other.gameObject.CompareTag("key"))
             {
                 key = null;
+                MoveState.key = null;
+                IdleState.key = null;
                 LandState.key = null;
             }
-        }
+        }*/
     }
 }
 

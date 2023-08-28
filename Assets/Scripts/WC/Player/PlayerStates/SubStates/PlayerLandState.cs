@@ -6,7 +6,6 @@ namespace onLand
 {
     public class PlayerLandState : PlayerGroundedState
     {
-        public GameObject key;
         public PlayerLandState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
         }
@@ -19,9 +18,9 @@ namespace onLand
         public override void Enter()
         {
             base.Enter();
-            if (key != null)
+            if (key)
             {
-                key.GetComponent<Key>().judgeKey.LandJudge();
+                key.judgeKey.LandJudge();
             }
         }
 

@@ -30,6 +30,7 @@ namespace onLand
 
             if (!isExitingState)
             {
+                key.judgeKey.StayJudge();
                 if (xInput != 0)
                 {
                     stateMachine.ChangeState(player.MoveState);
