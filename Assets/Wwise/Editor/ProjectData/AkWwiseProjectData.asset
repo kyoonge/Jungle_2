@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: aedaa4ddc4cf78459fe57bda3ffd5c85
     GuidInternal: 
-    m_lastTime: -8585084195207233375
+    m_lastTime: -8585084141065480476
     List:
     - name: Master
       guid: c38ef160a8acce40b984200f143d0cd9
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f9bc784e509e746b0560daff5b504cd
     GuidInternal: 
-    m_lastTime: -8585084195207293373
+    m_lastTime: -8585084141067998129
     List:
     - name: Count
       guid: 2d24c447d5b21e4c90e2ba05c7aa4630
@@ -254,8 +254,8 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585084212401804837
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000
-  ExpandedWaapiItemIds: 02000000030000000500000006000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
