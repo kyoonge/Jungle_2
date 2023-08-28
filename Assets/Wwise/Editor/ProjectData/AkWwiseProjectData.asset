@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5f9bc784e509e746b0560daff5b504cd
     GuidInternal: 
-    m_lastTime: -8585084106308102189
+    m_lastTime: -8585084012738357613
     List:
     - name: Count
       guid: 2d24c447d5b21e4c90e2ba05c7aa4630
@@ -254,9 +254,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585084106302919064
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedWaapiItemIds: 0200000003000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
