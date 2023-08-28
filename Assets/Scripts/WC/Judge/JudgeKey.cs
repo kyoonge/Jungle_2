@@ -90,7 +90,6 @@ public class JudgeKey : MonoBehaviour
 
     public IEnumerator EnterKeyEffect()
     {
-        Debug.Log("effecton");
         StopCoroutine(ExitKeyEffect());
         //effectKey.SetActive(true);
         for (float f = 0f; f < 1f; f += 0.1f)
@@ -104,7 +103,6 @@ public class JudgeKey : MonoBehaviour
 
     public IEnumerator ExitKeyEffect()
     {
-        Debug.Log("effectoff");
         for (float f = 1f; f > 0f; f -= 0.01f)
         {
             Color c = effectSpriteRenderer.color;

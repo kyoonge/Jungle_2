@@ -2755,7 +2755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<\uC774\uB3D9>\nW , D /  L \uC870\uC774\uC2A4\uD2F1\n<\uB300\uC26C>\nShift
+  m_text: "<\uC774\uB3D9>\nA , D /  L \uC870\uC774\uC2A4\uD2F1\n<\uB300\uC26C>\nShift
     / B \uBC84\uD2BC\n<\uAE09\uD558\uAC15>\nS / X \uBC84\uD2BC\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfc0959224ea6914e84cabef3172f5e1, type: 2}
